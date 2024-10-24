@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeesu Royalist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #F4F1ED;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #5D4037;
+    }
+
+    header {
+        background-color: #F4F1ED;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+        text-shadow: 2px 4px 5px pink;
+    }
+
+    .promo-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: white;
+        border: 2px solid #5D4037;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .promo-btn:hover {
+        background-color: #E3DED6;
+    }
+
+    /* Responsive Image */
+    .header img {
+        width: 100%; /* Make the image responsive */
+        max-width: 250px; /* Limit the max size */
+        height: auto;
+        margin-top: -40px;
+        margin-bottom: -160px;
+    }
+
+    /* Responsive Social Section */
+    .social {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .social a {
+        font-size: 30px;
+        text-decoration: none;
+        color: #000;
+        transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+        color: #007bff;
+    }
+
+    /* Responsive Offer Cards */
+    .offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .offer-card {
+        background-color: white;
+        border: 1px solid #E3DED6;
+        padding: 20px;
+        margin: 0 15px;
+        max-width: 300px;
+        width: 100%;
+        text-align: left;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+    .offer-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .offer-card img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .offer-card h3 {
+        font-size: 1.5rem;
+        color: #5D4037;
+    }
+
+    .offer-card p {
+        font-size: 1rem;
+        color: #7D5A50;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .promo-btn {
+            font-size: 1rem;
+            padding: 8px 16px;
+        }
+
+        .offer-card {
+        }
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .social a {
+            font-size: 24px;
+        }
+
+        .offer-card h3 {
+            font-size: 1.2rem;
+        }
+
+        .offer-card p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .social a {
+            font-size: 18px;
+        }
+
+        .offer-card h3 {
+            font-size: 1rem;
+        }
+
+        .offer-card p {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
+<body>
+<header>
+    <div class="header">
+        <img src="https://png.pngtree.com/png-clipart/20231001/original/pngtree-abstract-organic-shape-vector-illustration-png-image_13028852.png" alt="Zeesu Delights Logo">
+
+    </div>
+    <h1>Zeesu Royalist</h1>
+    <a href="https://www.google.com/search?q=zeesu+royalist" target="_blank" target="_blank" >
+        <button class="promo-btn">Search ➔</button>
+    </a>
+</header>
+
+
+    <!-- Social Links Section -->
+    <section class="social">
+        <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://x.com/zeesuroyalist" target="_blank" title="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://www.instagram.com/zeesu_royalist/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.youtube.com/@zeesu_royalist" target="_blank" title="YouTube"><i class="fab fa-youtube"></i> YouTube</a>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers">
+        <div class="offer-card">
+            <img src="https://pbs.twimg.com/media/GM54FiAX0AAu6_U?format=jpg&name=large" alt="Early Bird Discount">
+            <h3>Exploring technology.</h3>
+            <p>Solving real-world problems in the lab Hands-on experiments drive my growth, combining theory with practical solutions to stay ahead in the tech world.</p>
+        </div>
+        <div class="offer-card">
+            <img src="https://pbs.twimg.com/media/GM53nkwW4AAbQsN?format=jpg&name=large" alt="Wellhall Members Club">
+            <h3>Gaining knowledge.</h3>
+            <p>through Books inspire my learning, deepening my understanding and expanding my technical knowledge.</p>
+        </div>
+        <div class="offer-card">
+            <img src="https://pbs.twimg.com/media/GUmtjTEWMAANi9Z?format=jpg&name=large" alt="Book 3 Nights, Get 1 Night Free">
+            <h3>Building projects ideas.</h3>
+            <p>The library fuels my creativity, helping me turn ideas into functional applications, one project at a time.</p>
+        </div>
+    </section>
+
+    <!-- Social Links Section 2 -->
+    <section class="social">
+        <a href="https://wa.me/message/EERUGRMFY7U4M1" target="_blank" title="GitHub"><i class="fab fa-github"></i> WhatsApp</a>
+        <a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> Facebook</a>
+        <a href="https://in.pinterest.com/zeesu_royalist/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i> Pinterest</a>
+        <a href="https://zeesuroyalist.tumblr.com/likes" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Tumblr</a>
+        <a href="https://www.snapchat.com/add/zeesu_royalist" target="_blank" title="Snapchat"><i class="fab fa-snapchat"></i> Snapchat</a>
+    </section>
+
+          
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4F1ED;
+            color: #5D4037;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Flexbox Layout */
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #E3DED6;
+            padding-bottom: 20px;
+        }
+
+        .item img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .item .description {
+            flex-grow: 1;
+            padding: 0 20px;
+            font-size: 1.1rem;
+        }
+
+        .item .cta {
+            display: flex;
+            align-items: center;
+        }
+
+        .item .cta button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #5D4037;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .item img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .item .cta {
+                margin-top: 10px;
+                width: 100%;
+                text-align: right;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .section-header {
+                font-size: 2rem;
+            }
+
+            .item .description {
+                font-size: 1rem;
+                padding: 0;
+            }
+
+            .item .cta button {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<br>
+<body>
+
+<hr>
+    <div class="container">
+        <h1 class="section-header">Certifications I Have Earned</h1> <br>
+
+        <!-- First Item -->
+        <div class="item">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFWvc-4TQNKhw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719659875754?e=1732752000&v=beta&t=JaEjf3Zpu2jBPbbt6XUZHsdrLU_pohK3zOVxp6jfbE8" alt="Image 1">
+            <div class="description">
+                <h2>Google Appreciation</h2>
+                <p>Organized by Google Developer Student Clubs Consisting of modules on
+Generative AI.</p>
+            </div>
+            <div class="cta">
+                <button>Read more</button>
+            </div>
+        </div>
+
+        <!-- Second Item -->
+        <div class="item">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFmrtmPFzaUNQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719406605972?e=1732752000&v=beta&t=sY-9_BN-r56CsuOaLxehWAFiBtB3VY3mQ1nNIr84CXY" alt="Image 2">
+
+            <div class="description">
+                <h2>Microsoft from EDX</h2>
+                <p>Verified Microsoft from EDX learning, In Introduction to Python for Data Science.</p>
+            </div>
+            <div class="cta">
+                <button>Read more</button>
+            </div>
+        </div>
+
+        <!-- Third Item -->
+        <div class="item">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQGX5jkkkUS_aA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1720024055228?e=1732752000&v=beta&t=-kCe4zB1evZDke13iglh-Fd2s8WnLxaT6RA6JZX6Y3A" alt="Image 3">
+            <div class="description">
+                <h2>ISRO Certification</h2>
+                <p>Advances in Remote Sensing Techniques for Geological Applications.</p>
+            </div>
+            <div class="cta">
+                <button>Read more</button>
+            </div>
+        </div>
+
+        <!-- First Item -->
+        <div class="item">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQGBa19eYDFGWg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719408434208?e=1732752000&v=beta&t=Gh1wJeBVe_tZE0KS-ZexRszOdbBuGQ0f_o0fxycvCuM" alt="Image 1">
+            <div class="description">
+                <h2>IIIT Kota Rajasthan</h2>
+                <p>Certificate from Indian Institute of Information Technology Kota for Web Development.</p>
+            </div>
+            <div class="cta">
+                <button>Read more</button>
+            </div>
+        </div>
+
+        <!-- Third Item -->
+        <div class="item">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQGSFSBeM8Ai0A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719403931357?e=1732752000&v=beta&t=9egjVKcMDcc0bwQTUhkVcazDDYtdFHHg7rCpTtfkI3Y" alt="Image 3">
+            <div class="description">
+                <h2>Jamiya Milia Islamia</h2>
+                <p>Certificate from JMI, To get second place in Marathon race in Jawaharlal Nehru Stadium..</p>
+            </div>
+            <div class="cta">
+                <button>Read more</button>
+            </div>
+        </div>
+          
+        <!-- Fourth Item -->
+        <div class="item">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFXM-0ZFrNw8w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719313979760?e=1732752000&v=beta&t=RBZO8JbfFDVkYnwHJV0mYx_oDBthP37laHlBK7b2aXc" alt="Image 4">
+            <div class="description">
+                <h2>CM Rally parade</h2>
+                <p>Performed a parade before Arvind Kejriwal, Chief Minister of Delhi, as part of a special event.</p>
+            </div>
+            <div class="cta">
+                     <button>Read more</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .article {
+            background-color: #FFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .article img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .article h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .article p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .article {
+                flex-direction: column;
+            }
+
+            .article img {
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .article h2 {
+                font-size: 1.25rem;
+            }
+
+            .article p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Advancing Toward Achievement</h1>
+    <div class="container">
+        <div class="article">
+            <img src="https://pbs.twimg.com/media/GYJLtTdXIAAhejg?format=jpg&name=large" alt="Placeholder Image">
+            <div class="content">
+                <h2>Leading Team Software Project</h2>
+                <p>Collaborating with my team to develop a software solution, where I took the lead in explaining the project’s objectives and technical details. Together, we worked on transforming ideas into functional features, aiming for a successful project delivery.</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFbM9OuMEuaBw/feedshare-shrink_1280/feedshare-shrink_1280/0/1719299030198?e=1732752000&v=beta&t=MysqN9WDLAm2vJgIFQbQqT1JNcQ-uH6LQQso_ZrMCuI" alt="Placeholder Image">
+            <div class="content">
+                <h2>Gaining Knowledge Through Books</h2>
+                <p>Spending time in the library, diving deep into books to expand my understanding of various subjects. This is where I explore new ideas, refine my skills, and gain valuable insights to fuel my personal and academic growth.</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQGpi3JFpuOqcw/feedshare-shrink_1280/feedshare-shrink_1280/0/1726139199151?e=1732752000&v=beta&t=SnZ7mbn1IMWBKDLD5YGEE_qv2nVdT7UlwOuJC_zDENw" alt="Placeholder Image">
+            <div class="content">
+                <h2>Team Collaboration in Action</h2>
+                <p>In this moment, I am passionately explaining our software project to my team. Collaboration and communication are vital as we work together to solve challenges and innovate, ensuring our project reaches its full potential and meets our goals.</p>
+            </div>
+        </div>
+                  <div class="article">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQEPCDix-eUVnw/feedshare-shrink_1280/feedshare-shrink_1280/0/1710510019274?e=1732752000&v=beta&t=z6hBqYKaK5TZVhAChmvQu_CJTNPj7Z8zXzs6tHHmCoE" alt="Placeholder Image">
+            <div class="content">
+                <h2>Knowledge is Power</h2>
+                <p>This wall serves as my daily inspiration and learning resource. Filled with valuable information, quotes, and ideas, it encourages me to expand my knowledge, stay motivated, and continually seek personal and professional growth in my journey.</p>
+            </div>
+        </div>      
+ </div>
+</body> 
+          
+          <style>
+    /* Footer Styles */
+    footer {
+        background-color: #5D4037; /* Darker color for contrast */
+        color: #F4F1ED;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        flex: 1 1 200px;
+        margin: 20px 0;
+    }
+
+    .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+        color: #F4F1ED;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .social-icons a {
+        margin-right: 15px;
+        color: #F4F1ED;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        text-align: center;
+        margin-top: 40px;
+        border-top: 1px solid #F4F1ED;
+        padding-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer-column {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+    }
+</style>
+
+ <br> <br>         
+<footer>
+    <div class="footer-container">
+        <!-- Column 1: About Section -->
+        <div class="footer-column">
+            <h3>About Zeesu Royalist</h3>
+            <p>Zeesu Royalist is dedicated to delivering premium products and services with exceptional quality. Join us on our journey of excellence.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: rzeesu@gmail.com</li>
+                <li>Phone: 9999436978</li>
+                <li>Address: 540 Royal Street Saket, Delhi, India</li>
+            </ul>
+
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Zeesu Royalist. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Add FontAwesome for social media icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+          
+</body>
+</html>
