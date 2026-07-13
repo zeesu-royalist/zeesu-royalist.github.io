@@ -1,582 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeesu Royalist</title>
+    <meta name="description"
+        content="Portfolio of Zeesu Royalist, showcasing premium web development, C++ software projects, achievements, and technical credentials.">
+
+    <!-- CSS and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header Section -->
-        <div class="container">
-          <div class="image">
-            <img src="bg.png" alt="Zeesu Royalist Logo" id="img">
-          </div>
-        </div>
 
+    <!-- Header Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <span>Zeesu Royalist</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        <div class="hero-linework" aria-hidden="true"></div>
+        <div class="hero-monogram" aria-hidden="true">ZR</div>
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <div class="hero-content reveal">
+                    <div class="hero-kicker"><span></span> Independent digital craft <b>Est. 2026</b></div>
+                    <p class="hero-index">01 <i></i> Portfolio / 2026</p>
+                    <h1 class="hero-title"><span>Zeesu Royalist</span> <em style="margin-left: 30%; font-size: 20px;">We
+                            Make Different</em></h1>
+                    <div class="hero-typing">
+                        I'm a <span class="typed-text"
+                            data-words='["Creative Full-Stack Developer", "C++ Programmer", "UI/UX Specialist", "Problem Solver"]'></span><span
+                            class="typed-cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        A Software Engineer, Built 100+ Live Web Apps, Earned 50+ Certifications, Specializing in
+                        Next.js, React, Node.js & AWS.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Start a conversation <i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.google.com/search?q=zeesu+royalist" target="_blank"
+                            class="btn btn-secondary">Discover my work <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="hero-footer">
+                        <div class="social-dock" aria-label="Social links">
+                            <a href="https://github.com/zeesu-royalist" title="GitHub" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" title="LinkedIn"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/zeesu_royalist" title="Twitter" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/zeesu_royalist/" title="Instagram" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/9999736978" title="WhatsApp" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.youtube.com/@zeesu_royalist" title="YouTube" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                        <span class="hero-availability"><b></b> Available for select projects</span>
+                    </div>
+                </div>
+                <div class="hero-image-container reveal delay-2">
+                    <div class="hero-portrait-mark" aria-hidden="true">Z</div>
+                    <div class="portrait-caption portrait-caption-top"><span>Digital</span><span>Architect</span></div>
+                    <div class="profile-glow"></div>
+                    <div class="profile-frame">
+                        <img src="images/3.jpeg" alt="Zeesu Royalist presentation moment">
+                    </div>
+                    <div class="portrait-caption portrait-caption-bottom"><i></i><span>Design<br>&amp; Logic</span>
+                    </div>
+                    <div class="hero-proof-card">
+                        <strong>50<sup>+</sup></strong>
+                        <span>digital<br>experiences</span>
+                    </div>
+                    <div class="hero-insight-card"><i class="fas fa-sparkles"></i><span>Precision-led<br>creative
+                            systems</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
         <div class="container">
-            <h1 class="animate">Zeesu Royalist</h1>
-        </div>
-            <a href="https://www.google.com/search?q=zeesu+royalist" target="_blank">
-                <button class="promo-btn animate delay-1">Search ➔</button>
-            </a>
-    </section>
-
-    <!-- Social Links Section -->
-    <section class="container">
-        <div class="social animate delay-2">
-            <a href="https://github.com/zeesu-royalist" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://x.com/zeesu_royalist" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/zeesu_royalist/" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@zeesu_royalist" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://wa.me/9999736978" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://in.pinterest.com/zeesu_royalist/" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-            <a href="https://zeesuroyalist.tumblr.com/likes" title="Tumblr"><i class="fab fa-tumblr"></i></a>
-            <a href="https://www.snapchat.com/add/zeesu_royalist" title="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
-        </div>
-    </section>
-
-    <!-- Offers Section -->
-    <section class="container">
-        <div class="section-header animate">
-            <h2>My Journey</h2>
-            <p>Exploring technology, gaining knowledge, and building innovative projects</p>
-        </div>
-        
-        <div class="offers">
-            <div class="offer-card animate delay-1">
-                <img src="card1.jpeg" alt="Exploring technology">
-                <div class="offer-card-content">
-                    <h3>Exploring technology.</h3>
-                    <p>Solving real-world problems in the lab Hands-on experiments drive my growth, combining theory with practical solutions to stay ahead in the tech world.</p>
+            <div class="about-intro reveal">
+                <div>
+                    <span class="eyebrow">The person behind the work</span>
+                    <h2>A considered approach to <em>building</em> better.</h2>
                 </div>
+                <p>I bring together the clarity of engineering and the feeling of a well-made interface—so every project
+                    is useful, memorable, and built with intent.</p>
             </div>
-            
-            <div class="offer-card animate delay-2">
-                <img src="card2.jpeg" alt="Gaining knowledge">
-                <div class="offer-card-content">
-                    <h3>Gaining knowledge.</h3>
-                    <p>through Books inspire my learning, deepening my understanding and expanding my technical knowledge.</p>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <div class="hero-subtitle">My Identity</div>
+                    <h3>Engineering with Logic &amp; Design</h3>
+                    <p>
+                        Whether designing a streaming catalog, programming dynamic note managers, or analyzing data
+                        matrices, I prioritize clean files, responsiveness, and polished interactive flows.
+                    </p>
+                    <a href="achievements.html" class="btn btn-outline" style="margin-top: 1rem;">Explore My Journey <i
+                            class="fas fa-arrow-right"></i></a>
                 </div>
-            </div>
-            
-            <div class="offer-card animate delay-3">
-                <img src="card3.jpeg" alt="Building projects ideas">
-                <div class="offer-card-content">
-                    <h3>Building projects ideas.</h3>
-                    <p>The library fuels my creativity, helping me turn ideas into functional applications, one project at a time.</p>
+                <aside class="about-profile-card reveal delay-1">
+                    <div class="about-profile-image"><img src="images/1778755271207.jpeg" alt="Zeesu Royalist"></div>
+                    <span class="about-profile-label">A practitioner of</span>
+                    <strong>Code, composition<br>&amp; clear thinking.</strong>
+                    <div class="about-profile-rule"><span></span> Zeesu Royalist</div>
+                </aside>
+                <div class="about-stats reveal delay-1">
+                    <div class="stat-box glass-card tilt">
+                        <h4>100+</h4>
+                        <p>Web Projects</p>
+                    </div>
+                    <div class="stat-box glass-card tilt">
+                        <h4>30+</h4>
+                        <p>C++ Projects</p>
+                    </div>
+                    <div class="stat-box glass-card tilt">
+                        <h4>20+</h4>
+                        <p>Credentials</p>
+                    </div>
+                    <div class="stat-box glass-card tilt">
+                        <h4>50+</h4>
+                        <p>Total Certificates</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Certifications Section -->
-    <section class="container">
-        <div class="section-header animate">
-            <h2>Certifications I Have Earned</h2>
-            <p>Professional achievements and recognized expertise in various domains<br>And <span style="color: rgba(0, 0, 0, 0.942);">50+ other certificates</span> i got from different companies and organisations</p>
-        </div>
-        
-        <div class="items-container">
-            <!-- Certification Items -->
-            <div class="item animate delay-1">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQFscdGTOCFVsA/feedshare-shrink_1280/feedshare-shrink_1280/0/1719660833299?e=1760572800&v=beta&t=ZspPLCcZy4hbvxxe-l4DDwlegJEC2P4IQW0NdClHGYI"><img src="https://zeesuroyalist.weebly.com/uploads/1/3/2/0/132055210/screenshot-2025-02-25-at-10-40-32-pm.png" alt="Appreciation"></a>
-                <div class="item-content">
-                    <h2>Generative AI at SAP</h2>
-                    <p>Learned generative AI concepts, applications, and integration within SAP solutions.</p>
-                    <button>Read more</button>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills-heading reveal">
+                <div>
+                    <span class="eyebrow">Capabilities / 03</span>
+                    <h2>A versatile<br><em>technical practice.</em></h2>
                 </div>
-            </div>
-            
-            <div class="item animate delay-2">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQFc8lkBarI1Sg/feedshare-shrink_1280/feedshare-shrink_1280/0/1719660404729?e=1760572800&v=beta&t=KuzpJMbwnMN0VkWZjtuoZd-ZQh2GgoT1VGvTjTmUlWI"><img src="https://media.licdn.com/dms/image/v2/D5622AQFc8lkBarI1Sg/feedshare-shrink_1280/feedshare-shrink_1280/0/1719660404729?e=1760572800&v=beta&t=KuzpJMbwnMN0VkWZjtuoZd-ZQh2GgoT1VGvTjTmUlWI"></a>
-                <div class="item-content">
-                    <h2>Software Engineering</h2>
-                    <p>From The Open University. study on enterprise systems, object-oriented development, UML modeling,</p>
-                    <button>Read more</button>
-                </div>
-            </div>
-            
-            <div class="item animate delay-3">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQGX5jkkkUS_aA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1720024055228?e=1760572800&v=beta&t=DuOgCJ44U-LjNKnGORpKRsrA26HPvxRkyYHZR4Pstcc"><img src="isro.jpeg" alt="ISRO Certification"></a>
-                <div class="item-content">
-                    <h2>ISRO Certification</h2>
-                    <p>Advances in Remote Sensing Techniques for Geological Applications.</p>
-                    <button>Read more</button>
-                </div>
-            </div>
-                        
-            <div class="item animate delay-2">
-                <a href="https://pbs.twimg.com/media/G09-tNyWsAAkjr7?format=jpg&name=4096x4096"><img src="https://pbs.twimg.com/media/G09-tNyWsAAkjr7?format=jpg&name=4096x4096"></a>
-                <div class="item-content">
-                    <h2>AWS Cloud Foundations</h2>
-                    <p>20-hour program helped me build a solid foundation in cloud computing in Core AWS services</p>
-                    <a href="https://www.credly.com/badges/45af6654-2834-4622-89db-eff2605fedca/linked_in?t=svu5zg"><button>Read more</button></a>
-                </div>
-            </div>   
-
-            <div class="item animate delay-2">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQHEn1bOADjgUQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719407063137?e=1760572800&v=beta&t=aYcD_7QBmEOsYr69JL0OFEA-X4Hn8VNJus1CCXSjMpI"><img src="https://zeesuroyalist.weebly.com/uploads/1/3/2/0/132055210/screenshot-2025-02-25-at-10-37-43-pm_orig.png"></a>
-                <div class="item-content">
-                    <h2>Advanced Google Analytics</h2>
-                    <p>The course taught me how to set up goals and funnel analysis to track conversion processes clearly.</p>
-                    <button>Read more</button>
-                </div>
-            </div>     
-
-            <div class="item animate delay-2">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQHnzCJ9GIKLOg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1720023784367?e=1760572800&v=beta&t=aQH80rV8e6JwOV2BWxik0jPZyGWV6_P6-24sd0qnQOI"><img src="https://media.licdn.com/dms/image/v2/D5622AQHnzCJ9GIKLOg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1720023784367?e=1760572800&v=beta&t=aQH80rV8e6JwOV2BWxik0jPZyGWV6_P6-24sd0qnQOI"></a>
-                <div class="item-content">
-                    <h2>Accounting Fundamentals</h2>
-                    <p>Achieved a Certification in Accounting Fundamentals from Tata TCS. Eager to utilize this expertise in my future</p>
-                    <a href=""><button>Read more</button></a>
-                </div>
+                <p>Categorized competencies in client-side design, software logic, and general development tooling.</p>
+                <div class="skills-summary"><strong>03</strong><span>Focused<br>disciplines</span></div>
             </div>
 
-            <div class="item animate">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQGBa19eYDFGWg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719408434208?e=1760572800&v=beta&t=O5mHmKFhcQzuwOr0LUCsY5K5eB7yCv4gtcpklMq0wEY"><img src="iiit.jpeg" alt="IIIT Kota Rajasthan"></a>
-                <div class="item-content">
-                    <h2>IIIT Kota Rajasthan</h2>
-                    <p>Certificate from Indian Institute of Information Technology Kota for Web Development.</p>
-                    <button>Read more</button>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-card-top"><span class="skill-number">01</span><i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full-Stack<br>Development</h3>
+                    <p class="skill-card-copy">Interfaces that feel clear, responsive, and deliberate.</p>
+                    <div class="skill-meter"><span>Interface fluency</span><b>92%</b><i><em style="width:92%"></em></i>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fas fa-forward" style="color:#000000"></i> Next.js</span>
+                        <span class="skill-tag"><i class="fab fa-react" style="color:#61DAFB"></i> React.js</span>
+                        <span class="skill-tag"><i class="fas fa-wind" style="color:#38BDF8"></i> Tailwind</span>
+                        <span class="skill-tag"><i class="fab fa-js-square" style="color:#F7DF1E"></i> JS / TS</span>
+                        <span class="skill-tag"><i class="fas fa-wave-square" style="color:#88CE02"></i> GSAP</span>
+                        <span class="skill-tag"><i class="fas fa-cubes" style="color:#000000"></i> ShadCN</span>
+                        <span class="skill-tag"><i class="fab fa-node-js" style="color:#68A063"></i> Node</span>
+                        <span class="skill-tag"><i class="fas fa-server" style="color:#444444"></i> Express</span>
+                        <span class="skill-tag"><i class="fas fa-plug" style="color:#010101"></i> Socket.io</span>
+                        <span class="skill-tag"><i class="fas fa-sync-alt" style="color:#764ABC"></i> Redux</span>
+                        <span class="skill-tag"><i class="fas fa-bolt" style="color:#7C3AED"></i> Zustand</span>
+                        <span class="skill-tag"><i class="fas fa-shield-alt" style="color:#2563EB"></i> Zod / Joi</span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="item animate delay-1">
-                <a href="https://media.licdn.com/dms/image/v2/D5622AQH5MPvvDfEP3w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719405139079?e=1760572800&v=beta&t=CI8voLwOJyOORrlisLJXq17LOWyUYBRFM6E6yOcFKU0"><img src="gov.jpeg" alt="Cybersecurity by Government of India"></a>
-                <div class="item-content">
-                    <h2>Cybersecurity by Government of India</h2>
-                    <p>From the Ministry of Electronics & Information Technology, Government of India</p>
-                    <a href=""><button>Read more</button></a>
-                </div>
-            </div>
-            
-            <div class="item animate delay-2">
-                <a href=""><img src="cisco.jpeg" alt="English for IT"></a>
-                <div class="item-content">
-                    <h2>English for IT</h2>
-                    <p>By Cisco to for being a good English speaker, and for better communication skill</p>
-                    <a href="https://www.credly.com/badges/5d70e5a5-b39d-4d1f-84fd-0dfe0bcee3b8/linked_in?t=svu48a"><button>Read more</button></a>
-                </div>
-            </div>
-            
-            <!-- Additional items would follow the same pattern -->
-        </div>
-    </section>
 
-    <!-- Articles Section -->
-    <section class="container">
-        <div class="section-header animate">
-            <h2>Advancing Toward Achievement</h2>
-            <p>Moments from my journey of growth and learning</p>
-        </div>
-        
-        <div class="articles">
-            <div class="article animate delay-1">
-                <img src="1.jpeg" alt="Leading Team Software Project">
-                <div class="article-content">
-                    <h2>Leading Team Software Project</h2>
-                    <p>Collaborating with my team to develop a software solution, where I took the lead in explaining the project's objectives and technical details.</p>
+                <!-- Backend/Logic -->
+                <div class="skill-category glass-card reveal delay-1">
+                    <div class="skill-card-top"><span class="skill-number">02</span><i class="fas fa-brain"></i></div>
+                    <h3>Programming<br>Logic</h3>
+                    <p class="skill-card-copy">Structured thinking for systems that stand up to use.</p>
+                    <div class="skill-meter"><span>System thinking</span><b>88%</b><i><em style="width:88%"></em></i>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> C / C++</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> Js / Ts</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> Database</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Data Structures</span>
+                        <span class="skill-tag"><i class="fas fa-palette"></i> Graphic Designing</span>
+                        <span class="skill-tag"><i class="fas fa-sync"></i> Algorithms</span>
+                        <span class="skill-tag"><i class="fas fa-cogs"></i> OOP</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> REST APIs</span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="article animate delay-2">
-                <img src="2.jpeg" alt="Gaining Knowledge Through Books">
-                <div class="article-content">
-                    <h2>Gaining Knowledge Through Books</h2>
-                    <p>Spending time in the library, diving deep into books to expand my understanding of various subjects.</p>
-                </div>
-            </div>
-            
-            <div class="article animate delay-3">
-                <img src="3.jpeg" alt="Team Collaboration in Action">
-                <div class="article-content">
-                    <h2>Team Collaboration in Action</h2>
-                    <p>In this moment, I am passionately explaining our software project to my team.</p>
-                </div>
-            </div>
-            
-            <div class="article animate">
-                <img src="4.jpeg" alt="Knowledge is Power">
-                <div class="article-content">
-                    <h2>Knowledge is Power</h2>
-                    <p>This wall serves as my daily inspiration and learning resource.</p>
-                </div>
-            </div>
-                        
-            <div class="article animate">
-                <img src="AA.jpeg" alt="Knowledge is Power">
-                <div class="article-content">
-                    <h2>Tech Discovery</h2>
-                    <p>Explore how computers, robots, smart gadgets, and coding help us learn, play, and create the future.</p>
-                </div>
-            </div>
-                        
-            <div class="article animate">
-                <img src="BB.jpeg" alt="Knowledge is Power">
-                <div class="article-content">
-                    <h2>Hackathon Project</h2>
-                    <p>Collaborating with friends, building innovative projects, coding together, solving challenges.</p>
+
+                <!-- Workflow Tools -->
+                <div class="skill-category glass-card reveal delay-2">
+                    <div class="skill-card-top"><span class="skill-number">03</span><i class="fas fa-tools"></i></div>
+                    <h3>Tools &amp;<br>Workflows</h3>
+                    <p class="skill-card-copy">A practical toolkit for shipping focused work well.</p>
+                    <div class="skill-meter"><span>Delivery confidence</span><b>86%</b><i><em
+                                style="width:86%"></em></i></div>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fab fa-git-alt" style="color:#f1502f"></i> Git & GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-calculator"></i>AWS</span>
+                        <span class="skill-tag"><i class="fas fa-globe-americas"></i>Redis</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> Docker</span>
+                        <span class="skill-tag"><i class="fas fa-calculator"></i>RabbitMQ</span>
+                        <span class="skill-tag"><i class="fas fa-users"></i> IAM/,S3,EC2</span>
+                        <span class="skill-tag"><i class="fas fa-file-powerpoint"></i> Prisma</span>
+                        <span class="skill-tag"><i class="fas fa-rocket"></i> Deployment</span>
+                        <span class="skill-tag"><i class="fab fa-google" style="color:#4285f4"></i> Antigravity</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Works Section -->
-    <section class="container works">
-        <div class="section-header animate">
-            <h2>My Projects & Works</h2>
-            <p>Explore my diverse range of projects and digital creations<br>Created 50+ Web Dev Projects and 30+ C++ Projects</p>
+    <!-- Education & Experience Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="timeline-grid">
+
+                <!-- Education -->
+                <div class="timeline-column reveal">
+                    <h3><i class="fas fa-briefcase"></i> Experience & Activities</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-card glass-card tilt">
+                                <span class="timeline-date">2025 - 2026</span>
+                                <h4>Software Developer</h4>
+                                <p class="timeline-org">4IR RESEARCH LABS</p>
+                                <p class="timeline-desc">Developed B2B SaaS applications & Promoted to
+                                    <strong>HODOR</strong> Infosec in
+                                    recognition of strong performance, where I continued developing SaaS products and
+                                    delivering new features.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-card glass-card tilt">
+                                <span class="timeline-date">2024 - 2025</span>
+                                <h4>Full-Stack Developer</h4>
+                                <p class="timeline-org">JBH TECH INNOVATION </p>
+                                <p class="timeline-desc">Built and deployed 50+ client websites and a high-value website
+                                    for a company offering premium air purifier rooms worth 10 lakh each.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="timeline-column reveal delay-1">
+                    <h3><i class="fas fa-graduation-cap"></i> Achievements & Awards</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-card glass-card tilt">
+                                <span class="timeline-date">2023 - 2024</span>
+                                <h4>Web Development</h4>
+                                <p class="timeline-org"> IIIT Kota</p>
+                                <p class="timeline-desc">Leading project coordination, demonstrating visual interfaces
+                                    to development units, compiling documentation structures, and managing repository
+                                    tasks.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-card glass-card tilt">
+                                <span class="timeline-date">2023 - 2024</span>
+                                <h4>AI Development Projects</h4>
+                                <p class="timeline-org">SAP International</p>
+                                <p class="timeline-desc">Learned how AI systems work, built AI-powered applications,
+                                    integrated intelligent models, developed practical solutions, and created modern
+                                    AI-driven web experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        
-        <div class="works-grid">
-            <!-- Work Cards -->
-                         
-            <div class="work-card animate delay-2">
-                <img src="cardA1.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">ZeesuMax</h3>
-                    <p class="work-card-text">Stream your favorite movies, shows, and documentaries in HD.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section class="projects-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Featured Projects</h2>
+                <p>A handpicked selection of top web applications and digital models.</p>
             </div>
-                         
-            <div class="work-card animate delay-2">
-                <img src="cardA2.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu MapWeb</h3>
-                    <p class="work-card-text">Geographic and tech solutions high-quality services to help navigate </p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card tilt reveal">
+                    <div class="project-img-wrapper">
+                        <img src="images/cardA1.jpg" alt="ZeesuMax">
+                        <div class="project-overlay">
+                            <a href="project-details.html?id=zeesumax" class="btn btn-primary">Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>ZeesuMax</h3>
+                        <p>Stream your favorite movies, shows, and documentaries in high definition with a fluid design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zeesu-royalist/ZeesuMax" target="_blank" class="btn-link"><i
+                                    class="fab fa-github"></i> Code</a>
+                            <a href="project-details.html?id=zeesumax" class="btn-main">Details <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                         
-            <div class="work-card animate delay-2">
-                <img src="cardA3.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">ZeesuXen AI</h3>
-                    <p class="work-card-text">Personal AI assistant, conversations with intelligent AI technology.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card tilt reveal delay-1">
+                    <div class="project-img-wrapper">
+                        <img src="images/cardA3.jpg" alt="ZeesuXen AI">
+                        <div class="project-overlay">
+                            <a href="project-details.html?id=zeesuxen-ai" class="btn btn-primary">Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>ZeesuXen AI</h3>
+                        <p>Chat dashboard integrated with artificial intelligence for responses, summaries, and edits.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Web APIs</span>
+                            <span class="tech-badge">CSS Grid</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zeesu-royalist/ZeesuXen-AI" target="_blank" class="btn-link"><i
+                                    class="fab fa-github"></i> Code</a>
+                            <a href="project-details.html?id=zeesuxen-ai" class="btn-main">Details <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                         
-            <div class="work-card animate delay-2">
-                <img src="cardA4.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">ZeesuVision AI</h3>
-                    <p class="work-card-text">Transforming your imagination into stunning visual art with AI.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card tilt reveal delay-2">
+                    <div class="project-img-wrapper">
+                        <img src="images/cardA4.jpg" alt="ZeesuVision AI">
+                        <div class="project-overlay">
+                            <a href="project-details.html?id=zeesuvision-ai" class="btn btn-primary">Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>ZeesuVision AI</h3>
+                        <p>Visual creation editor turning text queries into graphic assets using image neural
+                            generators.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Canvas API</span>
+                            <span class="tech-badge">APIs</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zeesu-royalist/ZeesuVision-AI" target="_blank"
+                                class="btn-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="project-details.html?id=zeesuvision-ai" class="btn-main">Details <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-                         
-            <div class="work-card animate delay-2">
-                <img src="cardA5.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Lib</h3>
-                    <p class="work-card-text">Premium platform for book lovers to discover download favorite books.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+
+            <div class="section-footer reveal">
+                <a href="projects.html" class="btn btn-outline">View All 29 Projects <i class="fas fa-th"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Preview Section -->
+    <section class="journey">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Journey Highlights</h2>
+                <p>Moments in research, collaborative design, and software planning.</p>
+            </div>
+
+            <div class="journey-grid">
+                <!-- Highlight 1 -->
+                <div class="journey-card glass-card tilt reveal">
+                    <img src="images/BB.jpeg" alt="Hackathon Project">
+                    <div class="journey-body">
+                        <h3>Hackathon Project</h3>
+                        <p>Collaborating with developers, building structures, solving complex challenges, coding
+                            frameworks under limits.</p>
+                    </div>
                 </div>
-            </div>
-                         
-            <div class="work-card animate delay-2">
-                <img src="cardA6.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Verse</h3>
-                    <p class="work-card-text">Discover the latest trends, shop effortlessly, and enjoy unbeatable deals.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+
+                <!-- Highlight 2 -->
+                <div class="journey-card glass-card tilt reveal delay-1">
+                    <img src="images/1.jpeg" alt="Leading team project">
+                    <div class="journey-body">
+                        <h3>Leading Team Projects</h3>
+                        <p>Acting as project lead to present logic modules, outline scopes, and organize component
+                            updates.</p>
+                    </div>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="journey-card glass-card tilt reveal delay-2">
+                    <img src="images/AA.jpeg" alt="Tech Discovery">
+                    <div class="journey-body">
+                        <h3>Tech Discovery</h3>
+                        <p>Explaining visual modules, responsive rendering parameters, and logic variables to peer
+                            divisions.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="work-card animate delay-2">
-                <img src="cardA7.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu News</h3>
-                    <p class="work-card-text">Delivering trusted, real-time news powered by the latest technology.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+            <div class="section-footer reveal" style="margin-top: 4rem;">
+                <a href="achievements.html" class="btn btn-outline">Explore Full Journey <i class="fas fa-road"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Preview Section -->
+    <section class="certificates-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Key Credentials</h2>
+                <p>Validated specializations in AI, Cloud computing, Software architectures, and Web development.</p>
+            </div>
+
+            <div class="certs-grid">
+                <!-- Cert 1: SAP -->
+                <div class="cert-card glass-card tilt reveal">
+                    <div class="cert-img-wrapper">
+                        <img src="images/sap.jpeg" alt="SAP AI Certificate">
+                    </div>
+                    <div class="cert-body">
+                        <h3>Generative AI at SAP</h3>
+                        <p class="timeline-org">SAP SE</p>
+                        <a href="certificates.html" class="btn btn-secondary" style="margin-top: 1rem;"><i
+                                class="fas fa-certificate"></i> View Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Cert 2: Open University -->
+                <div class="cert-card glass-card tilt reveal delay-1">
+                    <div class="cert-img-wrapper">
+                        <img src="images/open.jpeg" alt="Open University Software Engineering">
+                    </div>
+                    <div class="cert-body">
+                        <h3>Software Engineering</h3>
+                        <p class="timeline-org">The Open University</p>
+                        <a href="certificates.html" class="btn btn-secondary" style="margin-top: 1rem;"><i
+                                class="fas fa-certificate"></i> View Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Cert 3: AWS -->
+                <div class="cert-card glass-card tilt reveal delay-2">
+                    <div class="cert-img-wrapper">
+                        <img src="images/aws.jpeg" alt="AWS Foundations Certificate">
+                    </div>
+                    <div class="cert-body">
+                        <h3>AWS Cloud Foundations</h3>
+                        <p class="timeline-org">Amazon Web Services</p>
+                        <a href="certificates.html" class="btn btn-secondary" style="margin-top: 1rem;"><i
+                                class="fas fa-certificate"></i> View Gallery</a>
+                    </div>
                 </div>
             </div>
 
-
-            <div class="work-card animate delay-1">
-                <img src="card1.jpg" alt="Zeesu Pixel">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Pixel</h3>
-                    <p class="work-card-text">Find high-quality images quickly using advanced search features.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
+            <div class="section-footer reveal">
+                <a href="certificates.html" class="btn btn-outline">View All Credentials <i
+                        class="fas fa-award"></i></a>
             </div>
-            
-            <div class="work-card animate delay-2">
-                <img src="card2.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu NoteWeb</h3>
-                    <p class="work-card-text">Create, save, and manage personal notes efficiently online.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
+        </div>
+    </section>
+
+    <!-- Contact & Feedback Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Get In Touch</h2>
+                <p>Have inquiries, contracts, or questions? Send a direct message below.</p>
             </div>
 
-            <div class="work-card animate delay-2">
-                <img src="card3.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu QR Studio</h3>
-                    <p class="work-card-text">Generate and share, and download QR codes instantly online.</p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
+            <div class="contact-grid">
+                <!-- Quick Info -->
+                <div class="contact-info reveal">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email Contact</h4>
+                            <p><a href="mailto:rzeesu@gmail.com">rzeesu@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Direct Phone</h4>
+                            <p><a href="tel:+919999730618">+91 9999730618</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Kalka Ji, New Delhi, India</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="work-card animate delay-2">
-                <img src="card4.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu WordTest</h3>
-                    <p class="work-card-text">Measure typing speed accurately with real-time test results.<p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
-            </div>
-                        
-            <div class="work-card animate delay-2">
-                <img src="card5.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Reader</h3>
-                    <p class="work-card-text">Text to speech converter for easy listening and content accessibility.<p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
-            </div>
 
-                        
-            <div class="work-card animate delay-2">
-                <img src="card6.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Notify</h3>
-                    <p class="work-card-text">Email subscription service for educational updates and guidance.<p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
+                <!-- Form -->
+                <form class="contact-form glass-card reveal delay-1" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form-control"
+                            placeholder="Write message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Submit Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
-
-                        
-            <div class="work-card animate delay-2">
-                <img src="card7.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Fusion Cinema</h3>
-                    <p class="work-card-text">Streaming platform for movies & shorts, cartoons, and adventure films.<p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
-            </div>
-
-                        
-            <div class="work-card animate delay-2">
-                <img src="card8.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Music</h3>
-                    <p class="work-card-text">Music service to explore artists and listen our collections & make your day.<p>
-                    <a href="https://zeesu-royalist.github.io/music/" class="btn">Check it out</a>
-                </div>
-            </div>
-
-                        
-            <div class="work-card animate delay-2">
-                <img src="card9.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Mart</h3>
-                    <p class="work-card-text">E-commerce platform for clothing, wishlists, and shopping cart.<p>
-                    <a href="https://zeesu-royalist.github.io/Zeesu-Mart/" class="btn">Check it out</a>
-                </div>
-            </div>
-
-                        
-            <div class="work-card animate delay-2">
-                <img src="card10.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Chronicles</h3>
-                    <p class="work-card-text">Knowledge hub for space, technology facts, and scientific discoveries.<p>
-                    <a href="https://zeesu-royalist.github.io/chronicles/" class="btn">Check it out</a>
-                </div>
-            </div>
-
-                        
-            <div class="work-card animate delay-2">
-                <img src="card11.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Delights</h3>
-                    <p class="work-card-text">Food delivery with fresh ingredients and fast home service.<p>
-                    <a href="https://zeesu-royalist.github.io/Zeesu-Delights/" class="btn">Check it out</a>
-                </div>
-            </div>
-
-                        
-            <div class="work-card animate delay-2">
-                <img src="card12.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Official</h3>
-                    <p class="work-card-text">My personal blogs and service featuring various artists and collections.<p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
-            </div>
-                                    
-            <div class="work-card animate delay-2">
-                <img src="card13.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu ReTouch</h3>
-                    <p class="work-card-text">Upload your image and adjust filters to create your perfect look and vibe.<p>
-                    <a href="#" target="_blank" class="btn">Check it out</a>
-                </div>
-            </div>
-                                    
-            <div class="work-card animate delay-2">
-                <img src="card14.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Weather Web</h3>
-                    <p class="work-card-text">Check whether in real time and make your plane to go out easy and do it.<p>
-                    <a href="https://zeesu-royalist.github.io/Zeesu-Weather-Cast/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                    
-            <div class="work-card animate delay-2">
-                <img src="card15.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu MemeStorm</h3>
-                    <p class="work-card-text">Funny and cringe memes online to make your face happy and feel to relex & cool.<p>
-                    <a href="https://zeesu-royalist.github.io/Zeesu-MemeStorm/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                    
-            <div class="work-card animate delay-2">
-                <img src="card16.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Quiz Hub</h3>
-                    <p class="work-card-text">Make your brain shark, play the quiz and learn something new and implement it.<p>
-                    <a href="https://zeesu-royalist.github.io/The-Zeesu-Quiz-Hub/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                                
-            <div class="work-card animate delay-2">
-                <img src="card17.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Quotes Liv</h3>
-                    <p class="work-card-text">Learn from experts by there quotes and transform your life to become something.<p>
-                    <a href="https://zeesu-royalist.github.io/Zeesu-Quotes-Library/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                                
-            <div class="work-card animate delay-2">
-                <img src="card18.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu To-Do</h3>
-                    <p class="work-card-text">Make your plan and mannage all task and your works and become faster to others<p>
-                    <a href="https://zeesu-royalist.github.io/To-Do-List-/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                                
-            <div class="work-card animate delay-2">
-                <img src="card19.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Tic-Tak</h3>
-                    <p class="work-card-text">Play with your special friend, and make special moments and memories.<p>
-                    <a href="https://zeesu-royalist.github.io/Tic-Tac-Toe-Game/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                                
-            <div class="work-card animate delay-2">
-                <img src="card20.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Texts</h3>
-                    <p class="work-card-text">Get different text styling and use that any where and make your work stylist.<p>
-                    <a href="https://zeesu-royalist.github.io/String-Transformers/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                                            
-            <div class="work-card animate delay-2">
-                <img src="card21.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Rock paper scissor</h3>
-                    <p class="work-card-text">AI based rock paper scissor, that make move by itself and try to win.<p>
-                    <a href="https://zeesu-royalist.github.io/AI-Based-Rock-Paper-Scissors/" class="btn">Check it out</a>
-                </div>
-            </div>
-                                                                        
-            <div class="work-card animate delay-2">
-                <img src="card22.jpg">
-                <div class="work-card-body">
-                    <h3 class="work-card-title">Zeesu Pay</h3>
-                    <p class="work-card-text">Smart billing & tipping solution for shopkeepers and customers.<p>
-                    <a href="https://zeesu-royalist.github.io/Zeesu-Pay/" class="btn">Check it out</a>
-                </div>
-            </div>
-
-
-            <!-- Additional work cards would follow the same pattern -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>About Zeesu Royalist</h3>
-                <p>Zeesu Royalist is dedicated to delivering premium products and services with exceptional quality. Join us on our journey of excellence.</p>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://zeesuroyalist.weebly.com">About Us</a></li>
-                    <li><a href="https://zeesu-royalist.github.io/Legacy/">Services</a></li>
-                    <li><a href="mailto:rzeesu@gmail.com">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>Email: rzeesu@gmail.com</li>
-                    <li>Phone: 9999730618</li>
-                    <li>Address: i7/540 Kalka Ji, New Delhi, India</li>
-                </ul>
-                
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/zeesu_royalist/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://x.com/zeesuroyalist" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/@zeesu_royalist" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h3>Zeesu Royalist</h3>
+                    <p>Creative Frontend Developer and Software Engineer focused on constructing high-quality digital
+                        environments with rich visuals and flawless functionality.</p>
+                    <div class="social-dock">
+                        <a href="https://github.com/zeesu-royalist" title="GitHub" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" title="LinkedIn"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/zeesu_royalist" title="Twitter" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/zeesu_royalist/" title="Instagram" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="projects.html">All Projects</a></li>
+                        <li><a href="achievements.html">My Journey</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Get In Touch</h3>
+                    <ul class="footer-contact-list">
+                        <li><i class="fas fa-envelope"></i> <span>rzeesu@gmail.com</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+91 9999730618</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Kalka Ji, New Delhi, India</span></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2023 Zeesu Royalist. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zeesu Royalist. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Simple animation on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const animatedElements = document.querySelectorAll('.animate');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            animatedElements.forEach(element => {
-                element.style.opacity = 0;
-                element.style.transform = 'translateY(20px)';
-                element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-                observer.observe(element);
-            });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
