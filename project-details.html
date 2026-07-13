@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - Zeesu Royalist</title>
-    <meta name="description" content="View the full case study, features, challenges, and implementation of projects created by Zeesu Royalist.">
-    
+    <meta name="description"
+        content="View the full case study, features, challenges, and implementation of projects created by Zeesu Royalist.">
+
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Header Section -->
     <nav class="navbar scrolled">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img src="bg.png" alt="Zeesu Royalist Logo">
                 <span>Zeesu Royalist</span>
             </a>
             <ul class="nav-links">
@@ -39,9 +41,11 @@
     <!-- Error/Fallback Container -->
     <div id="error-container" class="page-header" style="display: none; min-height: 80vh; align-content: center;">
         <div class="container">
-            <i class="fas fa-exclamation-triangle" style="font-size: 4rem; color: var(--accent-pink); margin-bottom: 2rem;"></i>
+            <i class="fas fa-exclamation-triangle"
+                style="font-size: 4rem; color: var(--accent-pink); margin-bottom: 2rem;"></i>
             <h2>Project Not Found</h2>
-            <p style="margin-bottom: 2rem;">The project study you are looking for does not exist or has been relocated.</p>
+            <p style="margin-bottom: 2rem;">The project study you are looking for does not exist or has been relocated.
+            </p>
             <a href="projects.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Projects</a>
         </div>
     </div>
@@ -67,8 +71,9 @@
                 <!-- Main Description Column -->
                 <div class="project-details-main reveal">
                     <h2>Overview & Purpose</h2>
-                    <p id="proj-long-desc" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; text-align: justify;"></p>
-                    
+                    <p id="proj-long-desc"
+                        style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; text-align: justify;"></p>
+
                     <h2 style="margin-bottom: 1.5rem;">Core Features</h2>
                     <ul id="proj-features" style="list-style: none; margin-bottom: 3rem; padding-left: 0;">
                         <!-- Dynamic list items -->
@@ -93,15 +98,18 @@
                         </div>
                         <div class="meta-item">
                             <h5>Technologies Used</h5>
-                            <div class="project-tech" id="proj-tech-sidebar" style="margin-top: 0.6rem; margin-bottom: 0;">
+                            <div class="project-tech" id="proj-tech-sidebar"
+                                style="margin-top: 0.6rem; margin-bottom: 0;">
                                 <!-- Dynamic tags -->
                             </div>
                         </div>
                         <div class="meta-item" style="border-top: 1px solid var(--border-glass); padding-top: 1.5rem;">
                             <h5>Deployment & Source</h5>
                             <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 0.8rem;">
-                                <a id="proj-demo-btn" href="#" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a id="proj-github-btn" href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> View Code</a>
+                                <a id="proj-demo-btn" href="#" target="_blank" class="btn btn-primary"><i
+                                        class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a id="proj-github-btn" href="#" target="_blank" class="btn btn-secondary"><i
+                                        class="fab fa-github"></i> View Code</a>
                             </div>
                         </div>
                     </div>
@@ -115,6 +123,9 @@
                     <!-- Dynamic screenshots -->
                 </div>
             </div>
+            <div class="section-footer reveal" style="margin-top: 30px;">
+                <a href="projects.html" class="btn btn-outline">View All Projects <i class="fas fa-th"></i></a>
+            </div>
         </section>
     </div>
 
@@ -126,18 +137,23 @@
         </div>
     </div>
 
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-about">
                     <h3>About Zeesu</h3>
-                    <p>Creative Frontend Developer and Software Engineer focused on constructing high-quality digital environments with rich visuals and flawless functionality.</p>
+                    <p>Creative Frontend Developer and Software Engineer focused on constructing high-quality digital
+                        environments with rich visuals and flawless functionality.</p>
                     <div class="social-dock">
                         <a href="https://github.com/zeesu-royalist" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a href="https://x.com/zeesu_royalist" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/zeesu_royalist/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/zeesu_royalist/" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -169,7 +185,7 @@
     <!-- Scripts -->
     <script src="js/projects-data.js"></script>
     <script src="js/main.js"></script>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Get URL queries
@@ -190,26 +206,26 @@
 
             // Populate metadata details
             document.title = `${project.title} - Project Case Study`;
-            
+
             const categoryMap = {
                 'web-apps': 'Web Application',
                 'tech': 'AI & Tech Experiment',
                 'games': 'Gaming & Interactive',
                 'utilities': 'Utility & Tool'
             };
-            
+
             const categoryText = categoryMap[project.category] || 'Software Work';
             document.getElementById('proj-category').textContent = categoryText;
             document.getElementById('proj-category-sidebar').textContent = categoryText;
             document.getElementById('proj-title').textContent = project.title;
             document.getElementById('proj-short-desc').textContent = project.description;
-            
+
             const bannerImg = document.getElementById('proj-banner');
             bannerImg.src = project.image;
             bannerImg.alt = `${project.title} Case Study Banner`;
 
             document.getElementById('proj-long-desc').textContent = project.longDescription || project.description;
-            
+
             // Populate features
             const featuresList = document.getElementById('proj-features');
             featuresList.innerHTML = '';
@@ -252,7 +268,7 @@
             // Generate Screenshots Gallery using the main image and generic layouts for illustration
             const screenshotsGrid = document.getElementById('proj-screenshots');
             screenshotsGrid.innerHTML = '';
-            
+
             // We create 2 visual screenshot cards using the main project image styled slightly differently
             for (let i = 1; i <= 2; i++) {
                 const img = document.createElement('img');
@@ -266,7 +282,7 @@
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const lightboxClose = document.getElementById('lightbox-close');
-            
+
             document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
                 trigger.addEventListener('click', () => {
                     lightboxImg.src = trigger.src;
@@ -287,10 +303,11 @@
                     lightbox.style.display = 'none';
                 }
             });
-            
+
             // Trigger reveals
             initScrollReveal();
         });
     </script>
 </body>
+
 </html>
