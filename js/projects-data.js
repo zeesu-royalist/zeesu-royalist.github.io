@@ -113,7 +113,7 @@ const projectsData = [
         image: "images/cardA1.jpg",
         description: "Stream your favorite movies, shows, and documentaries in HD.",
         longDescription: "ZeesuMax is a premium streaming interface conceptualized for modern entertainment hubs. It provides an intuitive catalog system that aggregates movies, series, and independent documentaries into beautiful high-definition grids, resembling premium services like Netflix or HBO Max.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Vanilla Web APIs"],
+        tech: ["React", "CSS3", "JavaScript", "Vanilla Web APIs"],
         features: [
             "HD video rendering & adaptive container layouts",
             "Rich interactive content category filter tags",
@@ -133,7 +133,7 @@ const projectsData = [
         image: "images/cardA2.jpg",
         description: "Geographic and tech solutions high-quality services to help navigate.",
         longDescription: "Zeesu MapWeb is a spatial mapping dashboard designed for geographic visualization and route inspection. Utilizing interactive map interfaces, it lets clients query destinations, examine local coordinates, and access location-based business services.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Geolocation API", "Leaflet.js / Custom Maps"],
+        tech: ["Next.js", "Shad/Cn", "JavaScript", "Geolocation API", "Leaflet.js / Custom Maps"],
         features: [
             "Real-time geographic location detection",
             "Custom map styles with interactive coordinate pinning",
@@ -153,7 +153,7 @@ const projectsData = [
         image: "images/cardA3.jpg",
         description: "Personal AI assistant, conversations with intelligent AI technology.",
         longDescription: "ZeesuXen AI is an interactive chat application powered by conversational artificial intelligence. It mimics human interactions, provides smart answers, parses complex queries, and supports creative writing tasks directly inside a clean, glowing glassmorphic workspace.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Web APIs", "AI API Integration"],
+        tech: ["React", "Tailwind", "JavaScript", "Web APIs", "AI API Integration"],
         features: [
             "Interactive chat window with smooth autoscroll",
             "Sleek markdown text formatting for code blocks",
@@ -173,7 +173,7 @@ const projectsData = [
         image: "images/cardA4.jpg",
         description: "Transforming your imagination into stunning visual art with AI.",
         longDescription: "ZeesuVision AI is a neural image generation studio that translates natural text prompts into unique digital designs and visual assets, enabling users to prototype layouts and graphics quickly.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Image Generation APIs", "Canvas API"],
+        tech: ["Next.js", "Shad/cn", "TypeScript", "Image Generation APIs", "Canvas API"],
         features: [
             "Prompt helper utility with quick inspiration tags",
             "Multi-resolution output options for standard screens",
@@ -193,7 +193,7 @@ const projectsData = [
         image: "images/cardA5.jpg",
         description: "Premium platform for book lovers to discover and download favorite books.",
         longDescription: "Zeesu Lib is a modern digital library designed for bibliophiles. It aggregates thousands of open-source literary works, letting users filter by genres, read directly online, and download EPUB or PDF formats easily.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Open Library API", "LocalStorage"],
+        tech: ["React", "Sass", "JavaScript", "Open Library API", "LocalStorage"],
         features: [
             "Full-text catalog search spanning titles, authors, and genres",
             "Interactive e-reader with font scaling and night mode",
@@ -249,7 +249,7 @@ const projectsData = [
         image: "images/card13.jpg",
         description: "Upload your image and adjust filters to create your perfect look.",
         longDescription: "Zeesu ReTouch is a browser-based photo editor utility. It lets users upload images and apply immediate adjustments like contrast, brightness, blur, sepia, and crop directly in the browser.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Canvas API", "CSS Filters"],
+        tech: ["Next.js", "Sass", "JavaScript", "Canvas API", "CSS Filters"],
         features: [
             "Local file selection and instant rendering onto editable canvases",
             "Range slider controls adjusting CSS filters in real-time",
@@ -289,7 +289,7 @@ const projectsData = [
         image: "images/card1.jpg",
         description: "Find high-quality images quickly using advanced search features.",
         longDescription: "Zeesu Pixel is a media search app that fetches millions of high-definition, royalty-free stock pictures from Unsplash/Pexels. Perfect for designers looking for quick high-resolution image assets.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Unsplash API", "Infinite Scroll"],
+        tech: ["Next.js", "Tailwind", "JavaScript", "Unsplash API", "Infinite Scroll"],
         features: [
             "Live masonry photo grids that adapt dynamically",
             "One-click direct photo downloading with API download tracking",
@@ -329,7 +329,7 @@ const projectsData = [
         image: "images/card4.jpg",
         description: "Measure typing speed accurately with real-time test results.",
         longDescription: "Zeesu WordTest is an interactive, gamified typing utility designed to analyze and test speed, accuracy, and typing consistency. Offers charts tracking performance history.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Timer APIs", "SVG Charting"],
+        tech: ["React", "Bootstrap", "JavaScript", "Timer APIs", "SVG Charting"],
         features: [
             "Real-time tracking of words-per-minute (WPM) and accuracy percentages",
             "Visual character color highlights (green correct, red error)",
@@ -349,7 +349,7 @@ const projectsData = [
         image: "images/card5.jpg",
         description: "Text to speech converter for easy listening and content accessibility.",
         longDescription: "Zeesu Reader utilizes SpeechSynthesis interfaces to turn pasted articles, text documents, or paragraphs into spoken content. Great for accessibility and listening on the go.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Speech Synthesis API"],
+        tech: ["React", "CSS3", "JavaScript", "Speech Synthesis API"],
         features: [
             "Multi-language selector utilizing native system voices",
             "Adjustable sliders for speed, pitch, and output volume",
@@ -389,7 +389,7 @@ const projectsData = [
         image: "images/card3.jpg",
         description: "Generate and share, and download QR codes instantly online.",
         longDescription: "Zeesu QR Studio is an elegant tool designed to transform texts, URLs, WiFi login details, and contact numbers into fully customized QR codes with varying colors, logos, and size options.",
-        tech: ["HTML5", "CSS3", "JavaScript", "QRCode.js API", "Canvas API"],
+        tech: ["React", "Tailwind", "JavaScript", "QRCode.js API", "Canvas API"],
         features: [
             "Instant dynamic QR code updates on keystroke",
             "Custom styling options (foreground/background color pickers)",
@@ -429,7 +429,7 @@ const projectsData = [
         image: "images/card7.jpg",
         description: "Streaming platform for movies & shorts, cartoons, and adventure films.",
         longDescription: "Zeesu Fusion Cinema is a movie entertainment catalog focused on custom indie creations, animations, and adventure releases. Users can browse reviews and play custom trailers.",
-        tech: ["HTML5", "CSS3", "JavaScript", "Media Source Extensions"],
+        tech: ["Next.js", "Sass", "JavaScript", "Media Source Extensions"],
         features: [
             "Cinema dark-mode interface with spotlight effects",
             "Interactive rating systems and review posts section",
@@ -449,7 +449,7 @@ const projectsData = [
         image: "images/card8.jpg",
         description: "Music service to explore artists and listen to collections.",
         longDescription: "Zeesu Music is a custom audio player interface loaded with pre-configured playlists, equalizer indicators, and direct track selection grids to play background audios.",
-        tech: ["HTML5", "CSS3", "JavaScript", "HTML5 Audio API"],
+        tech: ["React", "Tailwind", "JavaScript", "HTML5 Audio API"],
         features: [
             "Animated play/pause buttons and volume controls",
             "Track progression timeline with seeking capabilities",
@@ -489,7 +489,7 @@ const projectsData = [
         image: "images/card10.jpg",
         description: "Knowledge hub for space, technology facts, and scientific discoveries.",
         longDescription: "Zeesu Chronicles is a tech blog and digital magazine offering articles on astronomy, deep space exploration, quantum technologies, and physics discoveries. Immersive visuals and typography define its interface.",
-        tech: ["HTML5", "CSS3", "JavaScript", "NASA API / Custom Articles"],
+        tech: ["Next.js", "CSS3", "JavaScript", "NASA API / Custom Articles"],
         features: [
             "Space image-of-the-day slider retrieving live NASA data",
             "Bookmark article reading list panel with progress tracking",
@@ -529,7 +529,7 @@ const projectsData = [
         image: "images/card12.jpg",
         description: "My personal blogs and service featuring various artists and collections.",
         longDescription: "Zeesu Official is the landing hub highlighting Zeesu's blog feeds, creative writings, and collaborations. Perfect dashboard linking other digital nodes.",
-        tech: ["HTML5", "CSS3", "JavaScript", "RSS Feed Parsers"],
+        tech: ["React", "CSS3", "JavaScript", "RSS Feed Parsers"],
         features: [
             "Interactive blogs stream with custom reader views",
             "Dark/Light layouts toggle with state memory",

@@ -371,6 +371,13 @@ img {
     animation: blink 0.8s infinite;
 }
 
+.profile-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image ki tarah crop hoke fill karega */
+    display: block;
+}
+
 @keyframes blink {
 
     0%,
