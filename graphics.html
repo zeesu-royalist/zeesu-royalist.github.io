@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Zeesu Royalist</title>
-    <meta name="description"
-        content="Explore the diverse range of web applications, AI tools, games, and utilities created by Zeesu Royalist.">
-
+    <title>Graphics - Zeesu Royalist</title>
+    <meta name="description" content="Visual creations, brand assets, UI layouts, and typography concepts designed by Zeesu Royalist.">
+    
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+    <!-- Floating Graphic Design Accents (Shapes) -->
+    <div class="design-accent accent-circle-1" aria-hidden="true"></div>
+    <div class="design-accent accent-square-1" aria-hidden="true"></div>
+    <div class="design-accent accent-triangle-1" aria-hidden="true"></div>
 
     <!-- Header Section -->
     <nav class="navbar scrolled">
@@ -24,8 +26,8 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="graphics.html">Graphics</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="graphics.html" class="active">Graphics</a></li>
                 <li><a href="editing.html">Editing</a></li>
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="certificates.html">Certificates</a></li>
@@ -40,47 +42,46 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1>My Projects & Works</h1>
-            <p>Explore my digital creations, web development works, and software projects.</p>
-        </div>
-    </header>
+   <header
+    class="page-header design-themed-header"
+    style="
+        background: linear-gradient(rgba(225, 218, 160, 0.186), rgba(0, 0, 0, 0.099)),
+                    url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWx5ZmdhaGE0bjY1eWpvdm55NHJ4ZTZwa2N0YzdweDlkamhrOWhqeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gTOdDu8fKCwn2QXKCh/giphy.gif') center/cover no-repeat;
+    "
+>
+    <div class="container">
+        <span class="eyebrow" style="color: var(--accent-indigo); justify-content: center; width: 100%;">Creative Showcase</span>
+        <h1 style="background: linear-gradient(135deg, var(--text-silver) 0%, var(--accent-indigo) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">My Graphic Works</h1>
+        <p>Deconstructing vectors, typographic balances, and UI layout grids.</p>
+    </div>
+</header>
 
-    <!-- Projects Search and Filter Section -->
-    <section class="container" style="padding-bottom: 6rem;">
-        <!-- Search -->
-        <div class="search-container">
-            <i class="fas fa-search"></i>
-            <input type="text" id="project-search" placeholder="Search projects by name or technology...">
-        </div>
-
-        <!-- Category Filters -->
-        <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">All Works</button>
-            <button class="filter-btn" data-filter="web-apps">Web Apps</button>
-            <button class="filter-btn" data-filter="tech">AI & Tech</button>
-            <button class="filter-btn" data-filter="games">Games</button>
-            <button class="filter-btn" data-filter="utilities">Utilities</button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div id="projects-grid" class="projects-grid">
-            <!-- Dynamically injected project cards -->
+    <!-- Gallery Container -->
+    <main class="container" style="padding-bottom: 8rem; margin-top: 2rem;">
+        
+        <!-- Filter Bar -->
+        <div class="filter-bar reveal">
+            <button class="filter-btn active" data-filter="all">All Designs</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+            <button class="filter-btn" data-filter="illustration">Illustrations</button>
+            <button class="filter-btn" data-filter="typography">Typography</button>
         </div>
 
-        <div id="no-results" class="reveal" style="display: none; text-align: center; margin-top: 4rem;">
-            <i class="fas fa-search-minus" style="font-size: 3rem; color: var(--text-gray); margin-bottom: 1rem;"></i>
-            <h3>No Projects Found</h3>
-            <p>Try refining your search keyword or selecting a different category.</p>
+        <!-- Masonry Grid -->
+        <div class="graphics-gallery" id="graphics-gallery">
+            <!-- Dynamic Graphics Cards -->
         </div>
-        <div class="reveal" style="text-align: center; margin-top: 4rem;">
-            <p style="font-size: 1.1rem; color: var(--text-gray);"><i class="fas fa-award"
-                    style="color: var(--accent-indigo); margin-right: 0.5rem;"></i> Go and see my <strong>100+ other
-                    Projects</strong> on LinkedIn.
-            </p>
+
+        <div id="no-graphics-results" class="reveal" style="display: none; text-align: center; margin-top: 4rem;">
+            <i class="fas fa-file-image" style="font-size: 3rem; color: var(--text-gray); margin-bottom: 1rem;"></i>
+            <h3>No Works Found</h3>
+            <p>Try clicking another category filter.</p>
         </div>
-    </section>
+
+    </main>
+
+    
 
     <!-- ══ PREMIUM FOOTER ══════════════════════════════════════════════ -->
     <footer>
@@ -174,94 +175,72 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/projects-data.js"></script>
+    <script src="js/portfolio-images.js"></script>
     <script src="js/main.js"></script>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const projectsGrid = document.getElementById('projects-grid');
-            const searchInput = document.getElementById('project-search');
+            const gallery = document.getElementById('graphics-gallery');
+            const noResults = document.getElementById('no-graphics-results');
             const filterBtns = document.querySelectorAll('.filter-btn');
-            const noResults = document.getElementById('no-results');
 
-            let currentFilter = 'all';
-            let searchQuery = '';
+            let activeFilter = 'all';
 
-            // Render project cards
-            function renderProjects() {
-                projectsGrid.innerHTML = '';
-                let displayedCount = 0;
+            
 
-                projectsData.forEach(project => {
-                    const matchesCategory = currentFilter === 'all' || project.category === currentFilter;
+            function renderGallery() {
+                gallery.innerHTML = '';
+                let matchCount = 0;
 
-                    const projectSearchStr = `${project.title} ${project.description} ${project.tech.join(' ')}`.toLowerCase();
-                    const matchesSearch = projectSearchStr.includes(searchQuery.toLowerCase());
-
-                    if (matchesCategory && matchesSearch) {
-                        displayedCount++;
-                        const card = document.createElement('div');
-                        card.className = 'project-card glass-card tilt reveal';
-                        card.setAttribute('data-id', project.id);
-
-                        card.innerHTML = `
-                            <div class="project-img-wrapper">
-                                <img src="${project.image}" alt="${project.title}">
-                                <div class="project-overlay">
-                                    <a href="project-details.html?id=${project.id}" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-                            <div class="project-body">
-                                <h3>${project.title}</h3>
-                                <p>${project.description}</p>
-                                <div class="project-tech">
-                                    ${project.tech.map(t => `<span class="tech-badge">${t}</span>`).join('')}
-                                </div>
-                                <div class="project-links">
-                                    <a href="${project.github}" target="_blank" class="btn-link"><i class="fab fa-github"></i> Code</a>
-                                    <a href="project-details.html?id=${project.id}" class="btn-main">Details <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        `;
-                        projectsGrid.appendChild(card);
+                graphicsImages.forEach((item, index) => {
+                    if (activeFilter !== 'all' && item.category !== activeFilter) {
+                        return;
                     }
+                    matchCount++;
+
+                    const card = document.createElement('div');
+                    card.className = 'graphics-card glass-card tilt reveal';
+                    card.style.transitionDelay = `${(matchCount % 4) * 0.08}s`;
+                    
+                    // Lazy-loading and responsive layouts
+                    card.innerHTML = `
+                        <div class="graphics-img-wrapper">
+                            <img src="${item.url}" alt="${item.title}" loading="lazy">
+                            <div class="graphics-overlay">
+                                <span class="graphics-card-category">${item.category.toUpperCase()}</span>
+                                <h3>${item.title}</h3>
+                                
+                            </div>
+                        </div>
+                    `;
+
+                    gallery.appendChild(card);
                 });
 
-                if (displayedCount === 0) {
+                // Handle no results
+                if (matchCount === 0) {
                     noResults.style.display = 'block';
-                    noResults.classList.add('revealed');
                 } else {
                     noResults.style.display = 'none';
-                    noResults.classList.remove('revealed');
                 }
 
-                // Re-initialize tilt & scroll reveal for dynamic elements
-                initTiltEffect();
-                initScrollReveal();
+                // Re-initialize dynamic animations
+                if (typeof initTiltEffect === 'function') initTiltEffect();
+                if (typeof initScrollReveal === 'function') initScrollReveal();
             }
 
-            // Search inputs event
-            if (searchInput) {
-                searchInput.addEventListener('input', (e) => {
-                    searchQuery = e.target.value;
-                    renderProjects();
-                });
-            }
-
-            // Category buttons click events
+            // Filter button listeners
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
                     filterBtns.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    currentFilter = btn.getAttribute('data-filter');
-                    renderProjects();
+                    activeFilter = btn.getAttribute('data-filter');
+                    renderGallery();
                 });
             });
 
             // Initial render
-            renderProjects();
+            renderGallery();
         });
     </script>
 </body>
-
 </html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing - Zeesu Royalist</title>
+    <meta name="description" content="Color grading, photo manipulations, retouching, and visual editing works by Zeesu Royalist.">
+    
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Camera/Lens Floating Accents -->
+    <div class="editing-accent lens-ring-1" aria-hidden="true"></div>
+    <div class="editing-accent aperture-blade-1" aria-hidden="true"></div>
+
+    <!-- Header Section -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <span>Zeesu Royalist</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="graphics.html">Graphics</a></li>
+                <li><a href="editing.html" class="active">Editing</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header editing-themed-header">
+        <div class="container">
+            <span class="eyebrow" style="color: var(--accent-pink); justify-content: center; width: 100%;">Digital Retouching</span>
+            <h1 style="background: linear-gradient(135deg, var(--text-silver) 0%, var(--accent-pink) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">My Editing Gallery</h1>
+            <p>Exploring lighting corrections, atmospheric tone grading, and product composites.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container" style="padding-bottom: 8rem; margin-top: 2rem;">
+        
+        <!-- Interactive Sliders Section -->
+        <section class="slider-showcase-section">
+            <div class="section-title-wrap reveal">
+                <span class="eyebrow">Interactive / 01</span>
+                <h2>See My Editing Skills</h2>
+                <p>Drag the sliders left or right to compare raw captures with final retouched designs.</p>
+            </div>
+
+            <div class="sliders-grid">
+                <!-- Slider 1 -->
+                <div class="slider-wrapper glass-card reveal">
+                    <div class="before-after-slider" id="slider-portrait">
+                        <img class="before-image" src="https://i.pinimg.com/736x/61/8c/83/618c83afc72587744cfb83df54421947.jpg" alt="Raw Portrait">
+                        <img class="after-image" src="https://i.pinimg.com/1200x/89/84/7d/89847d15ba284e227627f6582265b820.jpg" alt="Edited Portrait">
+                        <div class="slider-handle">
+                            <div class="slider-line"></div>
+                            <div class="slider-button"><i class="fas fa-arrows-left-right"></i></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                    </div>
+                    <div class="slider-info">
+                        <h3>Studio Portrait Retouching</h3>
+                        <p>Facial detail smoothing, exposure balancing, hair sharpening, and localized shadow adjustments.</p>
+                    </div>
+                </div>
+
+                <!-- Slider 2 -->
+                <div class="slider-wrapper glass-card reveal delay-1">
+                    <div class="before-after-slider" id="slider-tokyo">
+                        <img class="before-image" src="https://i.pinimg.com/1200x/df/0a/7e/df0a7e3fc018abf23dddc4a9128e37b6.jpg" alt="Daylight Tokyo">
+                        <img class="after-image" src="https://i.pinimg.com/1200x/9a/df/ed/9adfed68017c998df0c6bcb556ab8ff6.jpg" alt="Cyberpunk Tokyo">
+                        <div class="slider-handle">
+                            <div class="slider-line"></div>
+                            <div class="slider-button"><i class="fas fa-arrows-left-right"></i></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                    </div>
+                    <div class="slider-info">
+                        <h3>Cyberpunk Tokyo Street</h3>
+                        <p>Neon color-shifts (magentas and teals), shadow saturation boosts, and foggy sky rendering details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" style="margin: 6rem 0; border: 0; border-top: 1px solid var(--border-glass);">
+
+        <!-- Static Gallery Grid Section -->
+        <section class="gallery-section">
+            <div class="section-title-wrap reveal">
+                <span class="eyebrow">Works / 02</span>
+                <h2>Retouching &amp; Grading Portfolio</h2>
+                <p>Curated gallery displaying product, landscape, and moody environmental composites.</p>
+            </div>
+
+            <!-- Grid Gallery -->
+            <div class="editing-gallery" id="editing-gallery">
+                <!-- Dynamic Editing Cards -->
+            </div>
+        </section>
+
+    </main>
+
+    
+        </div>
+    </div>
+
+    <!-- ══ PREMIUM FOOTER ══════════════════════════════════════════════ -->
+    <footer>
+
+        <!-- Brand banner -->
+        <div class="footer-brand-banner">
+            <span class="footer-brand-name">Zeesu Royalist</span>
+            <p class="footer-tagline">Full-Stack Developer &amp; Creative Technologist</p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Main content grid -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <!-- Col 1 – About -->
+                    <div class="footer-col footer-about">
+                        <h3>About</h3>
+                        <p>MERN stack developer &amp; creative technologist building high-performance digital products with elegant UI, clean code, and full-stack precision.</p>
+                        <div class="footer-socials">
+                            <a href="https://github.com/zeesu-royalist" class="footer-social-btn" title="GitHub" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" class="footer-social-btn" title="LinkedIn" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/zeesu_royalist" class="footer-social-btn" title="Twitter / X" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zeesu_royalist/" class="footer-social-btn" title="Instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Col 2 – Navigation -->
+                    <div class="footer-col">
+                        <h3>Navigate</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="achievements.html">Journey</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3 – Creative Work -->
+                    <div class="footer-col">
+                        <h3>Creative</h3>
+                        <ul class="footer-links">
+                            <li><a href="graphics.html">Graphics Design</a></li>
+                            <li><a href="editing.html">Photo Editing</a></li>
+                            <li><a href="certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 4 – Contact -->
+                    <div class="footer-col">
+                        <h3>Contact</h3>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>rzeesu@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 99997 30618</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kalka Ji, New Delhi, India</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 <span>Zeesu Royalist</span>. All rights reserved.</p>
+                    <a href="#" class="footer-back-to-top" aria-label="Back to top">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/portfolio-images.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const gallery = document.getElementById('editing-gallery');
+
+            
+
+            // Render slider triggers
+            initSliders();
+
+            function initSliders() {
+                const sliders = document.querySelectorAll('.before-after-slider');
+                sliders.forEach(slider => {
+                    const range = slider.querySelector('.slider-input');
+                    const afterImg = slider.querySelector('.after-image');
+                    const handle = slider.querySelector('.slider-handle');
+
+                    const updateSlider = () => {
+                        const val = range.value;
+                        afterImg.style.clipPath = `inset(0 0 0 ${val}%)`;
+                        handle.style.left = `${val}%`;
+                    };
+
+                    range.addEventListener('input', updateSlider);
+                    range.addEventListener('change', updateSlider);
+                    
+                    // Initial update
+                    updateSlider();
+                });
+            }
+
+            function renderGallery() {
+                gallery.innerHTML = '';
+
+                editingImages.forEach((item, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'editing-card glass-card tilt reveal';
+                    card.style.transitionDelay = `${(index % 3) * 0.1}s`;
+                    
+                    // Dynamic render with before-after hover overlap or normal hover details
+                    card.innerHTML = `
+                        <div class="editing-img-wrapper">
+                            <img src="${item.afterUrl}" alt="${item.title}" loading="lazy">
+                            <div class="editing-overlay">
+                                <span class="editing-card-category">${item.category.toUpperCase()}</span>
+                                <h3>${item.title}</h3>
+                                
+                            </div>
+                        </div>
+                    `;
+
+                    gallery.appendChild(card);
+                });
+
+                // Re-initialize dynamic animations
+                if (typeof initTiltEffect === 'function') initTiltEffect();
+                if (typeof initScrollReveal === 'function') initScrollReveal();
+            }
+
+            // Initial render
+            renderGallery();
+        });
+    </script>
+</body>
+</html>

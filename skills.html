@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills &amp; Expertise - Zeesu Royalist</title>
+    <meta name="description"
+        content="Technical expertise, coding workflows, logic modeling, and creative capabilities of Zeesu Royalist.">
+
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Skills Page Canvas Wrapper -->
+    <div class="skills-canvas-wrapper">
+        <div class="skills-grid-overlay" aria-hidden="true"></div>
+
+        <!-- Floating Geometric Accents -->
+        <div class="design-accent accent-circle-1" aria-hidden="true"></div>
+        <div class="design-accent accent-square-1" aria-hidden="true"></div>
+        <div class="design-accent accent-triangle-1" aria-hidden="true"></div>
+
+        <!-- Header Section -->
+        <nav class="navbar scrolled">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <span>Zeesu Royalist</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                    <li><a href="editing.html">Editing</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header & Hero Section -->
+        <header class="page-header design-themed-header" style="padding-bottom: 2rem;">
+            <div class="container">
+                <div class="skills-hero-grid">
+                    <!-- Left: Titles -->
+                    <div style="text-align: left;">
+                        <span class="eyebrow" style="color: var(--accent-indigo);">Expertise Canvas</span>
+                        <h1
+                            style="background: linear-gradient(135deg, var(--text-silver) 0%, var(--accent-indigo) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 0.5rem; margin-bottom: 1.5rem; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; font-weight: 800;">
+                            A Versatile<br><em
+                                style="font-family: var(--font-heading); font-weight: 500; font-style: italic;">Technical
+                                Practice.</em>
+                        </h1>
+                        <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.7; max-width: 550px;">
+                            A full-stack MERN developer's complete technical map — frontend frameworks, backend systems,
+                            databases, cloud infrastructure, and DevOps tools.
+                        </p>
+                    </div>
+
+                    <!-- Right: Stats summary dock -->
+                    <div class="skills-stats-dock reveal">
+                        <h3><i class="fa-solid fa-chart-bar"></i> Architect Summary</h3>
+                        <ul class="stats-list">
+                            <li class="stats-item">
+                                <span>Full-Stack Fluencies</span>
+                                <strong>33+ Technologies</strong>
+                            </li>
+                            <li class="stats-item">
+                                <span>Frontend Mastery</span>
+                                <strong>React / Next.js</strong>
+                            </li>
+                            <li class="stats-item">
+                                <span>Backend & Databases</span>
+                                <strong>MERN + SQL Stack</strong>
+                            </li>
+                            <li class="stats-item">
+                                <span>Cloud & DevOps</span>
+                                <strong>AWS / Docker / CI/CD</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Skills Area -->
+        <main class="container" style="padding-bottom: 8rem; margin-top: 2rem;">
+
+            <!-- Section 1.1: Core Stack Featured Row -->
+            <section class="skills-section">
+                <h3 class="featured-stack-title"><i class="fas fa-star"></i> Featured Core Stack</h3>
+
+                <div class="featured-stack-row" id="featured-stack-row">
+                    <!-- Dynamic circular dials render here -->
+                </div>
+            </section>
+
+            <!-- Section 1.2: Systems Dashboard -->
+            <section class="skills-section">
+                <h3 class="featured-stack-title"><i class="fas fa-layer-group"></i> Systems Dashboard</h3>
+
+                <!-- Category Switcher Tabs -->
+                <div class="skills-filter-container">
+                    <div class="skills-tabs">
+                        <div class="skills-tab-indicator" id="skills-tab-indicator"></div>
+                        <button class="skills-tab-btn active" data-filter="all">
+                            <i class="fas fa-th-large"></i> All Panels
+                        </button>
+                        <button class="skills-tab-btn" data-filter="frontend">
+                            <i class="fas fa-desktop"></i> Frontend
+                        </button>
+                        <button class="skills-tab-btn" data-filter="logic">
+                            <i class="fas fa-server"></i> Backend & DB
+                        </button>
+                        <button class="skills-tab-btn" data-filter="tools">
+                            <i class="fab fa-docker"></i> DevOps & Tools
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3-Column Grid Layout -->
+                <div class="dashboard-layout-grid" id="dashboard-layout-grid">
+
+                    <!-- Column 1: Frontend -->
+                    <div class="dashboard-column reveal" id="col-frontend" data-col="frontend">
+                        <div class="dashboard-col-header">
+                            <h3><i class="fas fa-desktop"></i> Frontend Stack</h3>
+                            <span class="dashboard-col-count" id="count-frontend">0</span>
+                        </div>
+                        <div class="dashboard-cards-stack" id="stack-frontend">
+                            <!-- JS Inject -->
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Logic -->
+                    <div class="dashboard-column reveal" id="col-logic" data-col="logic">
+                        <div class="dashboard-col-header">
+                            <h3><i class="fas fa-server"></i> Backend &amp; Databases</h3>
+                            <span class="dashboard-col-count" id="count-logic">0</span>
+                        </div>
+                        <div class="dashboard-cards-stack" id="stack-logic">
+                            <!-- JS Inject -->
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Workflows -->
+                    <div class="dashboard-column reveal" id="col-tools" data-col="tools">
+                        <div class="dashboard-col-header">
+                            <h3><i class="fab fa-docker"></i> DevOps &amp; Tools</h3>
+                            <span class="dashboard-col-count" id="count-tools">0</span>
+                        </div>
+                        <div class="dashboard-cards-stack" id="stack-tools">
+                            <!-- JS Inject -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="section-divider" style="margin: 6rem 0; border: 0; border-top: 1px solid var(--border-glass);">
+
+            <!-- Section 2 – Other Skills -->
+            <section class="skills-section">
+                <div class="section-title-wrap reveal" style="margin-bottom: 1.5rem;">
+                    <span class="eyebrow">Attributes / 02</span>
+                    <h2>Creative &amp; Mindset Matrix</h2>
+                    <p>Sought-after cognitive fluencies, visual compositions, and tactical focus structures applied
+                        outside technical boundaries.</p>
+                </div>
+
+                <div class="creative-skills-grid" id="creative-skills-grid">
+                    <!-- Dynamic creative attributes render here -->
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ══ PREMIUM FOOTER ══════════════════════════════════════════════ -->
+    <footer>
+
+        <!-- Brand banner -->
+        <div class="footer-brand-banner">
+            <span class="footer-brand-name">Zeesu Royalist</span>
+            <p class="footer-tagline">Full-Stack Developer &amp; Creative Technologist</p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Main content grid -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <!-- Col 1 – About -->
+                    <div class="footer-col footer-about">
+                        <h3>About</h3>
+                        <p>MERN stack developer &amp; creative technologist building high-performance digital products with elegant UI, clean code, and full-stack precision.</p>
+                        <div class="footer-socials">
+                            <a href="https://github.com/zeesu-royalist" class="footer-social-btn" title="GitHub" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" class="footer-social-btn" title="LinkedIn" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/zeesu_royalist" class="footer-social-btn" title="Twitter / X" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zeesu_royalist/" class="footer-social-btn" title="Instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Col 2 – Navigation -->
+                    <div class="footer-col">
+                        <h3>Navigate</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="achievements.html">Journey</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3 – Creative Work -->
+                    <div class="footer-col">
+                        <h3>Creative</h3>
+                        <ul class="footer-links">
+                            <li><a href="graphics.html">Graphics Design</a></li>
+                            <li><a href="editing.html">Photo Editing</a></li>
+                            <li><a href="certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 4 – Contact -->
+                    <div class="footer-col">
+                        <h3>Contact</h3>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>rzeesu@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 99997 30618</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kalka Ji, New Delhi, India</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 <span>Zeesu Royalist</span>. All rights reserved.</p>
+                    <a href="#" class="footer-back-to-top" aria-label="Back to top">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/skills-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const featuredRow = document.getElementById('featured-stack-row');
+
+            const stackFrontend = document.getElementById('stack-frontend');
+            const stackLogic = document.getElementById('stack-logic');
+            const stackTools = document.getElementById('stack-tools');
+
+            const countFrontend = document.getElementById('count-frontend');
+            const countLogic = document.getElementById('count-logic');
+            const countTools = document.getElementById('count-tools');
+
+            const creativeGrid = document.getElementById('creative-skills-grid');
+            const tabIndicator = document.getElementById('skills-tab-indicator');
+            const tabButtons = document.querySelectorAll('.skills-tab-btn');
+            const dashboardColumns = document.querySelectorAll('.dashboard-column');
+
+            let activeFilter = 'all';
+
+            // Brand colors & glow data — keyed by lowercase skill title
+            const brandColors = {
+                // Languages
+                'javascript': { hex: '#F7DF1E', rgb: '247, 223, 30', tags: ['ES2024', 'Async/Await', 'DOM API'] },
+                'typescript': { hex: '#3178C6', rgb: '49, 120, 198', tags: ['Generics', 'Interfaces', 'Type Safety'] },
+                'python': { hex: '#3776AB', rgb: '55, 118, 171', tags: ['Scripting', 'Automation', 'Data Logic'] },
+                'c / c++': { hex: '#00599C', rgb: '0, 89, 156', tags: ['Pointers', 'Memory Mgmt', 'Algorithms'] },
+                // Frontend
+                'next.js': { hex: '#000000', rgb: '30, 30, 30', tags: ['App Router', 'SSR / SSG', 'Server Actions'] },
+                'react.js': { hex: '#61DAFB', rgb: '97, 218, 251', tags: ['Hooks', 'Context API', 'Virtual DOM'] },
+                'gsap': { hex: '#88CE02', rgb: '136, 206, 2', tags: ['ScrollTrigger', 'Timelines', 'Motion'] },
+                'tailwind css': { hex: '#38BDF8', rgb: '56, 189, 248', tags: ['JIT Mode', 'Dark Mode', 'Responsive'] },
+                'shadcn/ui': { hex: '#09090B', rgb: '9, 9, 11', tags: ['Radix UI', 'Accessible', 'Composable'] },
+                'bootstrap': { hex: '#7952B3', rgb: '121, 82, 179', tags: ['Grid System', 'Utilities', 'SCSS Themes'] },
+                'material ui': { hex: '#007FFF', rgb: '0, 127, 255', tags: ['MUI Theme', 'Styled Engine', 'Components'] },
+                // Backend
+                'node.js': { hex: '#339933', rgb: '51, 153, 51', tags: ['Event Loop', 'REST APIs', 'Middleware'] },
+                'express.js': { hex: '#444444', rgb: '68, 68, 68', tags: ['Routing', 'Auth Guards', 'Error Handling'] },
+                'socket.io': { hex: '#010101', rgb: '30, 30, 30', tags: ['WebSockets', 'Real-time', 'Rooms'] },
+                // State & Validation
+                'redux': { hex: '#764ABC', rgb: '118, 74, 188', tags: ['RTK', 'Reducers', 'Middleware'] },
+                'zustand': { hex: '#FF6154', rgb: '255, 97, 84', tags: ['Slices', 'Persist', 'Subscriptions'] },
+                'zod': { hex: '#3068B7', rgb: '48, 104, 183', tags: ['Schemas', 'Parsing', 'Inference'] },
+                'joi': { hex: '#F7941E', rgb: '247, 148, 30', tags: ['Payload Validation', 'Rules', 'Patterns'] },
+                // Databases
+                'mongodb': { hex: '#47A248', rgb: '71, 162, 72', tags: ['Aggregations', 'Mongoose', 'Atlas'] },
+                'mysql': { hex: '#4479A1', rgb: '68, 121, 161', tags: ['Joins', 'Indexing', 'Stored Procs'] },
+                'postgresql': { hex: '#336791', rgb: '51, 103, 145', tags: ['JSONB', 'RLS', 'Full-text Search'] },
+                'supabase': { hex: '#3ECF8E', rgb: '62, 207, 142', tags: ['Auth', 'Storage', 'Realtime'] },
+                'prisma orm': { hex: '#2D3748', rgb: '45, 55, 72', tags: ['Migrations', 'Type-safe Queries', 'Studio'] },
+                'redis': { hex: '#DC382D', rgb: '220, 56, 45', tags: ['Caching', 'Pub/Sub', 'Rate Limit'] },
+                // DevOps & Tools
+                'aws': { hex: '#FF9900', rgb: '255, 153, 0', tags: ['S3', 'EC2', 'Lambda', 'IAM'] },
+                'docker': { hex: '#2496ED', rgb: '36, 150, 237', tags: ['Containers', 'Compose', 'Pipelines'] },
+                'git & github': { hex: '#F1502F', rgb: '241, 80, 47', tags: ['Branching', 'PR Reviews', 'CI/CD'] },
+                'vs code': { hex: '#007ACC', rgb: '0, 122, 204', tags: ['Debugger', 'Extensions', 'Keybindings'] },
+                'cursor': { hex: '#6B21A8', rgb: '107, 33, 168', tags: ['AI Pair Prog.', 'Codebase Chat', 'Autocomplete'] },
+                'responsive design': { hex: '#10B981', rgb: '16, 185, 129', tags: ['Fluid Grid', 'Clamp()', 'Zero Overflow'] },
+                'ui/ux design': { hex: '#F472B6', rgb: '244, 114, 182', tags: ['Wireframes', 'A11y', 'Design Systems'] },
+                'performance': { hex: '#F59E0B', rgb: '245, 158, 11', tags: ['Code Splitting', 'Lazy Load', 'Lighthouse'] }
+            };
+
+            // 4 featured dials — most iconic MERN stack pillars
+            const featuredTechs = ['react.js', 'node.js', 'mongodb', 'next.js'];
+
+            // Slider indicator pill positioning
+            const alignTabIndicator = (button) => {
+                tabIndicator.style.width = `${button.offsetWidth}px`;
+                tabIndicator.style.left = `${button.offsetLeft}px`;
+            };
+
+            // Align indicator after paint so layout dimensions are ready
+            // Using double-rAF to guarantee the pill measures after CSS renders
+            const alignOnLoad = () => {
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        const activeBtn = document.querySelector('.skills-tab-btn.active');
+                        if (activeBtn) alignTabIndicator(activeBtn);
+                    });
+                });
+            };
+            alignOnLoad();
+
+            // Align indicator on viewport resize
+            window.addEventListener('resize', () => {
+                const currentActive = document.querySelector('.skills-tab-btn.active');
+                if (currentActive) {
+                    alignTabIndicator(currentActive);
+                }
+            });
+
+            // Master render function for all development fluencies
+            function renderDashboard() {
+                // Clear stacks
+                stackFrontend.innerHTML = '';
+                stackLogic.innerHTML = '';
+                stackTools.innerHTML = '';
+                featuredRow.innerHTML = '';
+
+                let fCount = 0;
+                let lCount = 0;
+                let tCount = 0;
+
+                programmingSkills.forEach((skill) => {
+                    const normTitle = skill.title.toLowerCase();
+                    const colors = brandColors[normTitle] || { hex: '#8b6b4a', rgb: '139, 107, 74', tags: ['Frameworks'] };
+
+                    // 1. Featured gauges row
+                    if (featuredTechs.includes(normTitle)) {
+                        const dialCard = document.createElement('div');
+                        dialCard.className = 'radial-dial-card reveal';
+                        dialCard.style.setProperty('--brand-color', colors.hex);
+                        dialCard.style.setProperty('--brand-glow', `rgba(${colors.rgb}, 0.14)`);
+
+                        // Calculate SVG stroke offset value
+                        const radius = 45;
+                        const circumference = 2 * Math.PI * radius; // 282.74
+                        const offset = circumference - (circumference * skill.proficiency / 100);
+
+                        dialCard.innerHTML = `
+                            <div class="radial-dial-box">
+                                <svg>
+                                    <circle class="dial-track" cx="55" cy="55" r="${radius}"></circle>
+                                    <circle class="dial-progress" cx="55" cy="55" r="${radius}" 
+                                            data-offset="${offset}" style="stroke-dasharray: ${circumference}; stroke-dashoffset: ${circumference};"></circle>
+                                </svg>
+                                <div class="dial-percentage">
+                                    ${skill.proficiency}%
+                                    <span>Level</span>
+                                </div>
+                            </div>
+                            <div class="radial-dial-info">
+                                <h4>${skill.title}</h4>
+                                <p>${skill.description}</p>
+                            </div>
+                            <div class="radial-dial-tags">
+                                ${colors.tags.map(tag => `<span class="dial-tag">${tag}</span>`).join('')}
+                            </div>
+                        `;
+                        featuredRow.appendChild(dialCard);
+                    }
+
+                    // 2. Systems dashboard columns
+                    const horizontalCard = document.createElement('div');
+                    horizontalCard.className = 'skill-horizontal-card';
+                    horizontalCard.style.setProperty('--brand-color', colors.hex);
+                    horizontalCard.style.setProperty('--brand-glow', `rgba(${colors.rgb}, 0.16)`);
+
+                    horizontalCard.innerHTML = `
+                        <div class="skill-horizontal-top">
+                            <div class="skill-horizontal-title-box">
+                                <div class="skill-horizontal-icon" style="color: ${colors.hex}">
+                                    <i class="${skill.icon}"></i>
+                                </div>
+                                <h4>${skill.title}</h4>
+                            </div>
+                            <span class="skill-horizontal-percentage">${skill.proficiency}%</span>
+                        </div>
+                        <p class="skill-horizontal-desc">${skill.description}</p>
+                        <div class="skill-horizontal-meter">
+                            <i><em style="width: ${skill.proficiency}%; background: ${colors.hex}"></em></i>
+                        </div>
+                    `;
+
+                    // Sort into corresponding columns
+                    if (skill.category === 'frontend') {
+                        fCount++;
+                        stackFrontend.appendChild(horizontalCard);
+                    } else if (skill.category === 'logic') {
+                        lCount++;
+                        stackLogic.appendChild(horizontalCard);
+                    } else if (skill.category === 'tools') {
+                        tCount++;
+                        stackTools.appendChild(horizontalCard);
+                    }
+                });
+
+                // Update column badge counters
+                countFrontend.textContent = fCount;
+                countLogic.textContent = lCount;
+                countTools.textContent = tCount;
+
+                // Animate circular progress gauges after DOM draw
+                setTimeout(() => {
+                    document.querySelectorAll('.dial-progress').forEach(circle => {
+                        circle.style.strokeDashoffset = circle.getAttribute('data-offset');
+                    });
+                }, 150);
+
+                // Run filters check
+                filterDashboardColumns();
+            }
+
+            // Handles switching and transitions of columns
+            function filterDashboardColumns() {
+                const colFrontend = document.getElementById('col-frontend');
+                const colLogic = document.getElementById('col-logic');
+                const colTools = document.getElementById('col-tools');
+
+                if (activeFilter === 'all') {
+                    colFrontend.style.display = 'flex';
+                    colLogic.style.display = 'flex';
+                    colTools.style.display = 'flex';
+                } else {
+                    colFrontend.style.display = (activeFilter === 'frontend') ? 'flex' : 'none';
+                    colLogic.style.display = (activeFilter === 'logic') ? 'flex' : 'none';
+                    colTools.style.display = (activeFilter === 'tools') ? 'flex' : 'none';
+                }
+
+                // Re-initialize dynamic scroll reveals & hover tilts
+                if (typeof initTiltEffect === 'function') initTiltEffect();
+                if (typeof initScrollReveal === 'function') initScrollReveal();
+            }
+
+            // Tab button clicks
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    alignTabIndicator(btn);
+                    activeFilter = btn.getAttribute('data-filter');
+                    filterDashboardColumns();
+                });
+            });
+
+            // Render Creative Skills Mindset Matrix
+            function renderCreativeSkills() {
+                creativeGrid.innerHTML = '';
+
+                // Sub-discipline focus tags — one per skill (matches otherSkills order)
+                const creativeTags = [
+                    'Strategic Depth',
+                    'Algorithmic Speed',
+                    'Layout Alignment',
+                    'Color Grading',
+                    'AI Workflows',
+                    'PPT Creation'
+                ];
+
+                otherSkills.forEach((skill, index) => {
+                    const card = document.createElement('div');
+                    // Do NOT add 'reveal' — IntersectionObserver in main.js won't
+                    // observe dynamically-injected nodes, leaving them invisible forever.
+                    card.className = 'creative-skill-card';
+                    // Stagger the entrance animation via CSS custom property
+                    card.style.setProperty('--card-delay', `${index * 0.07}s`);
+
+                    const indexStr = (index + 1) < 10 ? `0${index + 1}` : `${index + 1}`;
+                    const tag = creativeTags[index] || 'Disciplines';
+
+                    card.innerHTML = `
+                        <div class="creative-skill-header-wrap">
+                            <span class="creative-skill-index">
+                                #${indexStr}
+                                <span class="creative-skill-tag">${tag}</span>
+                            </span>
+                            <div class="creative-skill-orb" style="color:${skill.iconColor}; border-color:${skill.iconColor}33; background:${skill.iconColor}11;">
+                                <i class="${skill.icon}"></i>
+                            </div>
+                        </div>
+                        <h4>${skill.title}</h4>
+                        <p>${skill.description}</p>
+                        <div class="creative-skill-accent" style="background:${skill.iconColor};"></div>
+                    `;
+                    creativeGrid.appendChild(card);
+                });
+            }
+
+            // Execute
+            renderDashboard();
+            renderCreativeSkills();
+        });
+    </script>
+</body>
+
+</html>
