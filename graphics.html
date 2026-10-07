@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphics - Zeesu Royalist</title>
-    <meta name="description" content="Visual creations, brand assets, UI layouts, and typography concepts designed by Zeesu Royalist.">
-    
+    <meta name="description"
+        content="Visual creations, brand assets, UI layouts, and typography concepts designed by Zeesu Royalist.">
+
+    <!-- Favicon & Apple Safari Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Floating Graphic Design Accents (Shapes) -->
@@ -42,23 +51,23 @@
     </nav>
 
     <!-- Page Header -->
-   <header
-    class="page-header design-themed-header"
-    style="
+    <header class="page-header design-themed-header" style="
         background: linear-gradient(rgba(225, 218, 160, 0.186), rgba(0, 0, 0, 0.099)),
                     url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWx5ZmdhaGE0bjY1eWpvdm55NHJ4ZTZwa2N0YzdweDlkamhrOWhqeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gTOdDu8fKCwn2QXKCh/giphy.gif') center/cover no-repeat;
-    "
->
-    <div class="container">
-        <span class="eyebrow" style="color: var(--accent-indigo); justify-content: center; width: 100%;">Creative Showcase</span>
-        <h1 style="background: linear-gradient(135deg, var(--text-silver) 0%, var(--accent-indigo) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">My Graphic Works</h1>
-        <p>Deconstructing vectors, typographic balances, and UI layout grids.</p>
-    </div>
-</header>
+    ">
+        <div class="container">
+            <span class="eyebrow" style="color: var(--accent-indigo); justify-content: center; width: 100%;">Creative
+                Showcase</span>
+            <h1
+                style="background: linear-gradient(135deg, var(--text-silver) 0%, var(--accent-indigo) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                My Graphic Works</h1>
+            <p>Deconstructing vectors, typographic balances, and UI layout grids.</p>
+        </div>
+    </header>
 
     <!-- Gallery Container -->
     <main class="container" style="padding-bottom: 8rem; margin-top: 2rem;">
-        
+
         <!-- Filter Bar -->
         <div class="filter-bar reveal">
             <button class="filter-btn active" data-filter="all">All Designs</button>
@@ -81,7 +90,7 @@
 
     </main>
 
-    
+
 
     <!-- ══ PREMIUM FOOTER ══════════════════════════════════════════════ -->
     <footer>
@@ -102,18 +111,23 @@
                     <!-- Col 1 – About -->
                     <div class="footer-col footer-about">
                         <h3>About</h3>
-                        <p>MERN stack developer &amp; creative technologist building high-performance digital products with elegant UI, clean code, and full-stack precision.</p>
+                        <p>MERN stack developer &amp; creative technologist building high-performance digital products
+                            with elegant UI, clean code, and full-stack precision.</p>
                         <div class="footer-socials">
-                            <a href="https://github.com/zeesu-royalist" class="footer-social-btn" title="GitHub" target="_blank" rel="noopener">
+                            <a href="https://github.com/zeesu-royalist" class="footer-social-btn" title="GitHub"
+                                target="_blank" rel="noopener">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" class="footer-social-btn" title="LinkedIn" target="_blank" rel="noopener">
+                            <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" class="footer-social-btn"
+                                title="LinkedIn" target="_blank" rel="noopener">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://x.com/zeesu_royalist" class="footer-social-btn" title="Twitter / X" target="_blank" rel="noopener">
+                            <a href="https://x.com/zeesu_royalist" class="footer-social-btn" title="Twitter / X"
+                                target="_blank" rel="noopener">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="https://www.instagram.com/zeesu_royalist/" class="footer-social-btn" title="Instagram" target="_blank" rel="noopener">
+                            <a href="https://www.instagram.com/zeesu_royalist/" class="footer-social-btn"
+                                title="Instagram" target="_blank" rel="noopener">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -185,7 +199,7 @@
 
             let activeFilter = 'all';
 
-            
+
 
             function renderGallery() {
                 gallery.innerHTML = '';
@@ -200,7 +214,7 @@
                     const card = document.createElement('div');
                     card.className = 'graphics-card glass-card tilt reveal';
                     card.style.transitionDelay = `${(matchCount % 4) * 0.08}s`;
-                    
+
                     // Lazy-loading and responsive layouts
                     card.innerHTML = `
                         <div class="graphics-img-wrapper">
@@ -243,4 +257,5 @@
         });
     </script>
 </body>
+
 </html>

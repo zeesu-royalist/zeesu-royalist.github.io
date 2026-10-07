@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTiltEffect();
     initBackToTop();
     initForms();
+    initNewPortfolioModal();
 });
 
 /* ================= Navigation Handler ================= */
@@ -54,7 +55,7 @@ function initNavigation() {
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        
+
         // Remove active class initially
         link.classList.remove('active');
 
@@ -68,7 +69,7 @@ function initNavigation() {
     // Highlight active section on home page scroll (only for anchor links)
     if (!activeFound && (currentPath === '/' || currentPath.includes('index.html') || currentPath === '')) {
         const sections = document.querySelectorAll('section[id]');
-        
+
         window.addEventListener('scroll', () => {
             let currentSec = '';
             const scrollPos = window.scrollY + 100;
@@ -76,7 +77,7 @@ function initNavigation() {
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.offsetHeight;
-                
+
                 if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
                     currentSec = section.getAttribute('id');
                 }
@@ -96,10 +97,10 @@ function initNavigation() {
 function initScrollProgress() {
     const progressContainer = document.createElement('div');
     progressContainer.className = 'scroll-progress-container';
-    
+
     const progressBar = document.createElement('div');
     progressBar.className = 'scroll-progress-bar';
-    
+
     progressContainer.appendChild(progressBar);
     document.body.appendChild(progressContainer);
 
@@ -125,7 +126,7 @@ function initTypingEffect() {
 
     function type() {
         const currentWord = words[wordIndex];
-        
+
         if (isDeleting) {
             target.textContent = currentWord.substring(0, charIndex - 1);
             charIndex--;
@@ -154,7 +155,7 @@ function initTypingEffect() {
 /* ================= Scroll Reveal Animations ================= */
 function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
-    
+
     if (reveals.length === 0) return;
 
     const observerOptions = {
@@ -181,7 +182,7 @@ function initScrollReveal() {
 /* ================= Parallax 3D Tilt Effect ================= */
 function initTiltEffect() {
     const tiltCards = document.querySelectorAll('.tilt');
-    
+
     // Check if device supports hover/mouse interactions
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
@@ -190,10 +191,10 @@ function initTiltEffect() {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left; // x coordinate inside element
             const y = e.clientY - rect.top;  // y coordinate inside element
-            
+
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-            
+
             // Calculate tilt angle (max 10 degrees)
             const rotateY = ((x - centerX) / centerX) * 10;
             const rotateX = -((y - centerY) / centerY) * 10;
@@ -237,12 +238,12 @@ function initForms() {
 
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         let isValid = true;
         const nameInput = contactForm.querySelector('input[name="name"]');
         const emailInput = contactForm.querySelector('input[name="email"]');
         const messageInput = contactForm.querySelector('textarea[name="message"]');
-        
+
         // Reset previous errors
         contactForm.querySelectorAll('.form-error').forEach(el => el.remove());
         contactForm.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
@@ -279,7 +280,7 @@ function initForms() {
         if (isValid) {
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
-            
+
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
@@ -287,12 +288,12 @@ function initForms() {
             setTimeout(() => {
                 submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
                 submitBtn.style.backgroundColor = '#10b981'; // green color
-                
+
                 // Show success modal or toast
                 showSuccessToast('Thank you! Your message has been sent successfully.');
-                
+
                 contactForm.reset();
-                
+
                 setTimeout(() => {
                     submitBtn.disabled = false;
                     submitBtn.textContent = originalText;
@@ -313,7 +314,7 @@ function showSuccessToast(message) {
         </div>
     `;
     document.body.appendChild(toast);
-    
+
     setTimeout(() => {
         toast.classList.add('active');
     }, 10);
@@ -323,3 +324,49 @@ function showSuccessToast(message) {
         setTimeout(() => toast.remove(), 400);
     }, 4000);
 }
+
+/* ================= New Portfolio Modal ================= */
+function initNewPortfolioModal() {
+    const modal = document.createElement('div');
+    modal.className = 'np-overlay';
+    modal.innerHTML = `
+        <div class="np-card">
+            <button class="np-close-icon np-dismiss" aria-label="Close modal">&times;</button>
+            <div class="np-media">
+                <img src="New-Portfolio.gif" alt="New Portfolio Preview">
+            </div>
+            <div class="np-body">
+                <div class="np-badge"><i class="fas fa-sparkles"></i> New Portfolio Live</div>
+                <h3>Check Out My New Portfolio</h3>
+                <p>Explore my latest projects, enhanced UI, and updated software showcase.</p>
+                <div class="np-actions">
+                    <a href="https://zeesu-royalist.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Visit Portfolio <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <button class="btn btn-secondary np-dismiss">Stay Here</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+    requestAnimationFrame(() => modal.classList.add('active'));
+
+    const close = () => {
+        modal.classList.remove('active');
+        setTimeout(() => modal.remove(), 250);
+        document.removeEventListener('keydown', onEsc);
+    };
+
+    const onEsc = (e) => e.key === 'Escape' && close();
+    document.addEventListener('keydown', onEsc);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target.closest('.np-dismiss')) close();
+    });
+}
+
+
+
+
+
